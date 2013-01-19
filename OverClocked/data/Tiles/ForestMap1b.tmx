@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="orthogonal" width="120" height="140" tilewidth="10" tileheight="10">
+ <tileset firstgid="1" name="Collision" tilewidth="10" tileheight="10">
+  <image source="CollisionTransparent.png" width="10" height="10"/>
+  <tile id="0">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="2" name="SpawnPlayer" tilewidth="10" tileheight="10">
+  <image source="SpawnPlayer.png" width="10" height="10"/>
+  <tile id="0">
+   <properties>
+    <property name="spawn" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="3" name="deathCollision" tilewidth="10" tileheight="10">
+  <image source="deathCollision.png" width="10" height="10"/>
+  <tile id="0">
+   <properties>
+    <property name="death" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="4" name="Portal" tilewidth="10" tileheight="10">
+  <image source="Portal.png" width="10" height="10"/>
+  <tile id="0">
+   <properties>
+    <property name="portal" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="5" name="solRef" tilewidth="178" tileheight="100">
+  <image source="solRef.png" width="178" height="100"/>
+  <tile id="0">
+   <properties>
+    <property name="spawn" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="6" name="sentRef" tilewidth="98" tileheight="69">
+  <image source="sentRef.png" width="98" height="69"/>
+  <tile id="0">
+   <properties>
+    <property name="spawn" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="7" name="droidRef" tilewidth="76" tileheight="81">
+  <image source="droidRef.png" width="76" height="81"/>
+  <tile id="0">
+   <properties>
+    <property name="spawn" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="8" name="camera" tilewidth="800" tileheight="600">
+  <image source="camera.png" width="800" height="600"/>
+  <tile id="0">
+   <properties>
+    <property name="camera" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="9" name="Forest_1" tilewidth="10" tileheight="10">
+  <image source="Forest/Forest_1.png" width="90" height="96"/>
+ </tileset>
+ <tileset firstgid="90" name="Forest_4" tilewidth="10" tileheight="10">
+  <image source="Forest/Forest_4.png" width="90" height="96"/>
+ </tileset>
+ <tileset firstgid="171" name="Forest_10" tilewidth="10" tileheight="10">
+  <image source="Forest/Forest_10.png" width="90" height="38"/>
+ </tileset>
+ <tileset firstgid="198" name="Forest_15" tilewidth="10" tileheight="10">
+  <image source="Forest/Forest_15.png" width="90" height="39"/>
+ </tileset>
+ <tileset firstgid="225" name="Forest_14" tilewidth="10" tileheight="10">
+  <image source="Forest/Forest_14.png" width="90" height="39"/>
+ </tileset>
+ <tileset firstgid="252" name="Forest_23" tilewidth="10" tileheight="10">
+  <image source="Forest/Forest_23.png" width="83" height="36"/>
+ </tileset>
+ <tileset firstgid="276" name="Forest_24" tilewidth="10" tileheight="10">
+  <image source="Forest/Forest_24.png" width="84" height="36"/>
+ </tileset>
+ <tileset firstgid="300" name="Forest_20" tilewidth="10" tileheight="10">
+  <image source="Forest/Forest_20.png" width="90" height="60"/>
+ </tileset>
+ <tileset firstgid="354" name="Forest_17" tilewidth="10" tileheight="10">
+  <image source="Forest/Forest_17.png" width="90" height="60"/>
+ </tileset>
+ <tileset firstgid="408" name="Forest_18" tilewidth="10" tileheight="10">
+  <image source="Forest/Forest_18.png" width="90" height="60"/>
+ </tileset>
+ <tileset firstgid="462" name="Forest_2" tilewidth="10" tileheight="10">
+  <image source="Forest/Forest_2.png" width="90" height="94"/>
+ </tileset>
+ <tileset firstgid="543" name="Forest_8" tilewidth="10" tileheight="10">
+  <image source="Forest/Forest_8.png" width="90" height="96"/>
+ </tileset>
+ <tileset firstgid="624" name="Forest_13" tilewidth="10" tileheight="10">
+  <image source="Forest/Forest_13.png" width="90" height="62"/>
+ </tileset>
+ <tileset firstgid="678" name="Forest_12" tilewidth="10" tileheight="10">
+  <image source="Forest/Forest_12.png" width="90" height="61"/>
+ </tileset>
+ <tileset firstgid="732" name="Forest_9" tilewidth="10" tileheight="10">
+  <image source="Forest/Forest_9.png" width="60" height="41"/>
+ </tileset>
+ <layer name="Collision" width="120" height="140">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3b226DMBAAUef/f7pPlVI1hIt318swR/IjNjBJQyB9jTFeDvQQj33Z7MtmXzb7stmXzb5s9mWzL5t92ezLZl82+7LZl82+bPZlsy+bfdnsy2ZfNvuy2ZfNvmz2ZbMvm33Z7MtmXzb7stmXzb5s9mWzL5t92ezLZl82+7LZl82+bPZlsy+bfdnsy2ZfNvuy2ZfNvmz2ZbMvm33Z7Mv2ChyR62ZvPztX5PqZ7PusvjPzzKxr3xz2vU+rK+z7rL4zI3Ld7O2z5uqGchzdrXoN2beGfdnsqwz2ZSNdK+q/96725bEvm33Z7Mux9/3LvvdmXzb7Po992ezLZt95Fc8Orq5h33n2ZbPvcXvHsXrcjX3tW6nzeey6X9/Y97jo/ar83B6jx3m17zP6dh2Vxxq5xhjx+3/F6n5eXzEQ2h3x1L5PsdeX+DfrSY70PTKHeorqa+OeIvvauZ+IvhHbKEdWX9/LPWT0/TS31rAvW0VfO6+T2XdrHdWp7mvjWlV9P62nfKv6Oj6PaNV939d07PedfT3Yt9c4e66OnusxtuenO3OMmefDvjk6942Yc6/vE8aZ85XFvva9Mue3vvqry+vs7P6OYV8i+7LZl82+bNmf71rLtmz2ZbMvm33Z7MtmXzb7MlXc29YaVc8uVGurqX3v79t71b73deTvsH3v6ejnq33v5ey1k33v48o1sX37m/muY9/eZr/H2renqPsT9u0n8t6TffvIuKdo3x6y7hfbd63K/2FQrYpnPPatV/nszr61qp/J2rfGquft9s238ncU9s3T4TcyW7/XuTIi153ZPmL9Veclmn2ZXX/Zlz9+AAgKqm2ABgEA
+  </data>
+ </layer>
+ <layer name="Death" width="120" height="140">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3DAQkAAAwDoMH7d36NwRRMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKDXDV7yXZW+0IAGAQA=
+  </data>
+ </layer>
+ <layer name="SpawnPlayer" width="120" height="140">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OMQ0AAAgDsAX/olGxwNEqaAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQMtcBwAA4LkF4aZWc4AGAQA=
+  </data>
+ </layer>
+ <layer name="SpawnEnemySoldier" width="120" height="140">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3cMQoAMAgEMJf6/yd37CyISElmwVsVMQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKg4Az2yUDuRBwAAAAAAAAAAAACgkztoAAAA+JvZHwAAAAAAHntzAAAAAAAAAAAAAAAAAAAAAAAANvMvC4BNLgmmz9CABgEA
+  </data>
+ </layer>
+ <layer name="SpawnEnemySentinel" width="120" height="140">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3cQQkAAAwDsb7mX/JMDAYlUXAKLgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANrMdwAAAAAAAAAAAAAAAAAAAAAAAAC1vK4AuLaHOysDgAYBAA==
+  </data>
+ </layer>
+ <layer name="SpawnEnemyDroid" width="120" height="140">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3dMQ4AIAgDQBbj/3/s6u4g1rsPlIUwNVQBAAAAAAAAAAAAAABAjvlZLgDs3CM4Z48AAAAAAAAAAPKN2wMAAAAAAAAAAAAAAAAAAABAM/41AAAAAAAAAAAAAAAAAMC79AQBAAAAAAAAAAAAAEiyAIserwCABgEA
+  </data>
+ </layer>
+ <layer name="Platform" width="120" height="140" opacity="0.48">
+  <data encoding="base64" compression="gzip">
+   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
+  </data>
+ </layer>
+ <layer name="Portal" width="120" height="140">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OMQEAAAjAoB32z2wMDyEBBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP811AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAFn1OSA2ABgEA
+  </data>
+ </layer>
+ <layer name="Camera" width="120" height="140">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OMQ0AAAgDsJ34V4yKBY5WQRMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+GuuA1Qtt7D6R4AGAQA=
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="orthogonal" width="200" height="63" tilewidth="10" tileheight="10">
+ <tileset firstgid="1" name="camera" tilewidth="800" tileheight="600">
+  <image source="camera.png" width="800" height="600"/>
+  <tile id="0">
+   <properties>
+    <property name="camera" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="2" name="Collision" tilewidth="10" tileheight="10">
+  <image source="CollisionTransparent.png" width="10" height="10"/>
+  <tile id="0">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="3" source="deathCollision.tsx"/>
+ <tileset firstgid="4" name="Portal" tilewidth="10" tileheight="10">
+  <image source="Portal.png" width="10" height="10"/>
+  <tile id="0">
+   <properties>
+    <property name="portal" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="5" name="SpawnPlayer" tilewidth="10" tileheight="10">
+  <image source="SpawnPlayer.png" width="10" height="10"/>
+  <tile id="0">
+   <properties>
+    <property name="spawn" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="6" name="bergRef" tilewidth="452" tileheight="518">
+  <properties>
+   <property name="spawn" value="true"/>
+  </properties>
+  <image source="bergRef.png" width="452" height="518"/>
+  <tile id="0">
+   <properties>
+    <property name="spawn" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="7" name="enH0_0" tilewidth="10" tileheight="10">
+  <image source="rock/rock/enH0_0.png" width="90" height="47"/>
+ </tileset>
+ <tileset firstgid="43" name="enV0_0" tilewidth="10" tileheight="10">
+  <image source="rock/rock/enV0_0.png" width="38" height="60"/>
+ </tileset>
+ <tileset firstgid="61" name="edU_0" tilewidth="10" tileheight="10">
+  <image source="rock/rock/edU_0.png" width="66" height="46"/>
+ </tileset>
+ <tileset firstgid="85" name="enH1_4" tilewidth="10" tileheight="10">
+  <image source="rock/rock/enH1_4.png" width="90" height="66"/>
+ </tileset>
+ <tileset firstgid="139" name="enV1_0" tilewidth="10" tileheight="10">
+  <image source="rock/rock/enV1_0.png" width="34" height="60"/>
+ </tileset>
+ <layer name="Platform" width="200" height="63">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3dxW4cURCF4d6FGRxmtOMwMzM7bxWHGR42Z+erkWq6J51OVVf/n/Tv7uKORvLoHkVKVQEAAADA//FT/VK/vS8CBHFRXVKXvS8CBDSjjqhZ74sAAR1Vx9Rx74sAAZ1QJ9Up74sAAZ1WZ9RZ74sAAZ1T59UF74sAAbFfATb2K8DGfgXY2K8AG/sVYGO/AmzsV4CN/QqwsV8BNvYrwMZ+BdjYrwAb+xVgY78CbOxXgK3cr66qa+q6uqFu+l0LCKHcr26rO+quuqfuO94LiKDcrx6qR+qxeqKeOt4LiKDcr56rF+qlmlOvHO8FRFDuV6/VvHozcuZKxdsEw1TuV2/VO/V+5MytircJhqncrz6oj+rTyJkHFW8TDFO5X31WX9TXkTPPKt4mGKZyv/qmvqsfrjcC4ij3q7/5/w14uyOzJvvVOLzdkVmT/Woc3u7IrMl+NQ5vd2TWZL8Chqrr/Yr3O/qs7X5Vh/c7+qztflWH9zv6rO1+VYf3O/qs7X4FZMZ+lRv7SDve//6K769b7CPtdL1f1eH76xb7SDtd71d1+P66xT7STtf7VR2+P0TGfgXY2K8Am/d+NYmsW1fWz5WB9341iaxbV9bPlYH3fjWJrFtXtM/F79kC7/1qElm3rmifi9+zBexX/qL9vY72e+aJ/cpftL/X0X7PPPVpv8qKv9dxWfvVUrVMLVcr1Eq1Si1Si9USzvyzM9bf68h3znamydnVao1aq9ap9WqD2qim1CbOcCbpmSZnN6staqvaprarHWqn2qV2c4YzSc80ObtH7VX71H51QB1Uh9RhNc0ZziQ90+TsH31jE7XgxAAA
+  </data>
+ </layer>
+ <layer name="Boss" width="200" height="63">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OMQ0AAAgDsF34l4yJJXC0CpoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0DTXAQAAXllHymC14MQAAA==
+  </data>
+ </layer>
+ <layer name="Collision" width="200" height="63">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3c0WqEMBCGUdn3f+heKtZ/Gyoyk3gODKVCIVv9SLzZz7ZtH2PMr9kOP4GdPiA77yPATh+QOV9Bpg/I9AGZPiDTB2T6gEwfkOkDMn1Apg/I9AGZPiDTB2T6gEwfkOkDMn1Apg/I9AGZPiDTB2THPq6+Nw7eLHWgD9AHfHPuwPkKdld9nH/3bsJbjfTx19/AqvQBmfMVZCP7BbzVnT7sLazubh8j12BW+oDM+Qoy7+eQPdmH/YXZPd3HyDXoSh+QOV9B5v0cMn2sy/59X2Uf7t+z/H/vq+5j5Br/o4/79LEufdxX3Yf7R2fezyHTB2Sz9LHqWWzVz7WKmfoYuTYbffSmj1rd+ui2nmoz9bHifev2ubqtp9osfayq2/PYbT3V9FGr2/PYbT3V9FHL89ibPmrpo7erPowx+xxVr8WYbgN89wNrQxhF4MQAAA==
+  </data>
+ </layer>
+ <layer name="Portal" width="200" height="63">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OMQ0AAAgDsB3414yMJdAqaAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAZdMOAAA8t6nyZRDgxAAA
+  </data>
+ </layer>
+ <layer name="Camera" width="200" height="63">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OMQ0AAAgDsOHfNPcUkJBWQRMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaHMdAAB4ZAFbOq/94MQAAA==
+  </data>
+ </layer>
+ <layer name="SpawnPlayer" width="200" height="63">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OMQ0AAAgDsD34t4yB/SSkVdAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+GCuAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQLWaydeL4MQAAA==
+  </data>
+ </layer>
+ <layer name="Death" width="200" height="63">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICXAVfigWHgxAAA
+  </data>
+ </layer>
+</map>

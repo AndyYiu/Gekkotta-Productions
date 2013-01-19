@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="199" height="212" tilewidth="10" tileheight="10">
+ <tileset firstgid="1" name="Collision" tilewidth="10" tileheight="10">
+  <image source="Collision.png" width="10" height="10"/>
+  <tile id="0">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="2" name="SpawnPlayer" tilewidth="10" tileheight="10">
+  <image source="SpawnPlayer.png" width="10" height="10"/>
+  <tile id="0">
+   <properties>
+    <property name="spawn" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="3" name="deathCollision" tilewidth="10" tileheight="10">
+  <image source="deathCollision.png" width="10" height="10"/>
+  <tile id="0">
+   <properties>
+    <property name="death" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="4" name="Portal" tilewidth="10" tileheight="10">
+  <image source="Portal.png" width="10" height="10"/>
+  <tile id="0">
+   <properties>
+    <property name="portal" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="5" name="sentRef" tilewidth="98" tileheight="69">
+  <image source="sentRef.png" width="98" height="69"/>
+  <tile id="0">
+   <properties>
+    <property name="spawn" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="6" name="solRef" tilewidth="178" tileheight="100">
+  <image source="solRef.png" width="178" height="100"/>
+  <tile id="0">
+   <properties>
+    <property name="spawn" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="7" name="droidRef" tilewidth="76" tileheight="81">
+  <image source="droidRef.png" width="76" height="81"/>
+  <tile id="0">
+   <properties>
+    <property name="spawn" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="8" name="enH0_1" tilewidth="10" tileheight="10">
+  <image source="OmegaSector/enH0_1.png" width="180" height="54"/>
+ </tileset>
+ <tileset firstgid="98" name="enV1_1" tilewidth="10" tileheight="10">
+  <image source="OmegaSector/enV1_1.png" width="54" height="120"/>
+ </tileset>
+ <tileset firstgid="158" name="enV0_1" tilewidth="10" tileheight="10">
+  <image source="OmegaSector/enV0_1.png" width="54" height="120"/>
+ </tileset>
+ <tileset firstgid="218" name="enH0_2" tilewidth="10" tileheight="10">
+  <image source="junkyard/enH0_2.png" width="90" height="32"/>
+ </tileset>
+ <tileset firstgid="245" name="edU_0" tilewidth="10" tileheight="10">
+  <image source="junkyard/edU_0.png" width="61" height="31"/>
+ </tileset>
+ <tileset firstgid="263" name="edU_0" tilewidth="10" tileheight="10">
+  <image source="dung/edU_0.png" width="40" height="62"/>
+ </tileset>
+ <tileset firstgid="287" name="camera" tilewidth="800" tileheight="600">
+  <image source="camera.png" width="800" height="600"/>
+  <tile id="0">
+   <properties>
+    <property name="camera" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Death" width="199" height="212">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3DsQkAAAgDsIL//+wRRVwSSAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwJXRxwDQWoGWS6swkwIA
+  </data>
+ </layer>
+ <layer name="SpawnPlayer" width="199" height="212">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OMQ0AAAgDsAX/ormnAI5WQRMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGhzHQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXlhnujqvMJMCAA==
+  </data>
+ </layer>
+ <layer name="SpawnEnemySoldier" width="199" height="212">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3PsQ0AMAgEMarsPzILUEaCl+wJ7qoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOCWtx0wuNj0U9JfUisAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAugbizE0KMJMCAA==
+  </data>
+ </layer>
+ <layer name="SpawnEnemySentinel" width="199" height="212">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3c0QkAIAgFwH7cf+UW6CcoFL2bQEIIX+RaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwASRXQAAAAAAAABleDviJ/0FAAAAAP3I/QAAAAC4JVMCAAAAupF3nDkXAAAAAJhFJggAAAAAAAAAAAAAAAAAAAAAALxirxEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPBLZBcAAAAAAAAAAAAAAACU5M8BAAAAk9zOweZmALpz1wEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAexsJffa/MJMCAA==
+  </data>
+ </layer>
+ <layer name="SpawnEnemyDroid" width="199" height="212">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3ZuQ0AAAgDMTr235gF6HlkT5Ay0kUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPBJTg8AAAAAAAAAOExzBQA28EkAAAAAAAB6OgoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAjALf4gSwMJMCAA==
+  </data>
+ </layer>
+ <layer name="Platform" width="199" height="212">
+  <data encoding="base64" compression="gzip">
+   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
+  </data>
+ </layer>
+ <layer name="Portal" width="199" height="212">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OMQ0AAAgDsB3414yMBdIqaAIAAAAAAAAAAAAAAAAAAAAAAMBn0w4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZy3XnIGIMJMCAA==
+  </data>
+ </layer>
+ <layer name="Camera" width="199" height="212">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OAQ0AAAgDoJvE/i2NoZuQgAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICPurYHAAAAAAAAAAAAAAAAwHUDBPxuQDCTAgA=
+  </data>
+ </layer>
+ <layer name="Collision" width="199" height="212">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3cYW+bMBSG0eT//+mpHypN0ZsUCOBr33MkSyjtBsU8CXjVno/H42kYRhy//t+GTl5beDy0AT+0AZk2INMGZNqATBuQaQMybUCmDci0AZk2INMGZNqATBuQaQMybUCmDci0AZk2INMGZNqATBuQaYPOPv0fVNqgM23AftqATBuQaQMybUCmDci0QWfWcCHTBuynDci0AZk2INMGZNqgM+tUkGkD9tMGZNqATBuQaYPOPItDpg3YTxuQaQMybTCTT88HV+3r9bW0DaNpgw7uvM6P7FMbjKINmJM2INMGZNqATBuQdWxjxPpIR9XXobb+Xa+vpe0r9j/C7Mc/C224tlhTx3sq2EIbkGkDMm1Atlobs64TzHrcK7tynarqGl7F67DiMXW3WhtbVD0ualntnqoaHc5LG9fq0MaqP6M2+JY2rtnv0fM5cj5G7XvVa7AqbeynjR6uXKeqavbj5x7amO/4uYdncci0QUUVPtsrtlHhvDDWnmvgqutFG+e567grnZ8Kx9KpjasdPZd//Tlt1H4f23us1qnOa4PatAHn6HhPBVtooy+f/59poy9tfKYNrrBCdx3bOGPeVpj7K61wfjquU2mDLTq20dHWOVtlbs98/3t9LW0zL21oA86iDci0wUiV7+E6tnFkPirP4VEVfqbKc9FxnaryfNxp1p9JGzBWx3sq2EIbkGkDMm1Apg3IrFNBpg3I3FNBpg3ItAGZNiDzLA6ZNiBzTwWZNiDTBmTagEwbkGkDMmu4kGkDMvdUkGkDMm1AtqUNw1hpbJW+/xm+bhirjK3S9z/fbEMn2oBMG5BpAzJtQKYNOvu0lqUNOtMG7KcNyLQBmTYg0wZk2oBMG5BpAzJtQKYNyLQBmTYg0wad+V1DyLQB+2kDMm1Apg3ItAGZNiDTBp1Zw4VMG7CfNiDTBmTagEwbdOZZHDJtwH7agEwbkGkDMm1Apg3ItAGZNiDTBmf49G9os9LGfCpehxWP6VvamM+K1+EofmcEMm3Ae+8+f7UBmTayd5+1Vw/q0EbWuY27jq3yOfjRvY3q8zPCjG0cfR/a8rXX/aTtFWljDdo4TgPspQ3IVmxDB5xBG+tyHr4zexvm/z3n5jvaoLpRczxTGzroSRt/0wZ3qtqGDhhNG5BVbQNG0wZk2oBsdBueK6hKG5CNbgOq0gZk2oBMG5CNbsOzOFVpA7LRbUBV2oBMG5BpA7LRbXgWpyptQDa6DahKG5BpAzJtQDa6Dc/iVKUNyEa3AVW9a8MwDMMwto5/VkgDzzCTAgA=
+  </data>
+ </layer>
+</map>

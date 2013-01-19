@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="orthogonal" width="250" height="119" tilewidth="10" tileheight="10">
+ <tileset firstgid="1" name="Collision" tilewidth="10" tileheight="10">
+  <image source="CollisionTransparent.png" width="10" height="10"/>
+  <tile id="0">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="2" source="camera.tsx"/>
+ <tileset firstgid="3" name="SpawnPlayer" tilewidth="10" tileheight="10">
+  <image source="SpawnPlayer.png" width="10" height="10"/>
+  <tile id="0">
+   <properties>
+    <property name="spawn" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="4" name="enV1_0" tilewidth="10" tileheight="10">
+  <image source="snow/enV1_0.png" width="34" height="60"/>
+ </tileset>
+ <tileset firstgid="22" name="enV0_0" tilewidth="10" tileheight="10">
+  <image source="snow/enV0_0.png" width="34" height="60"/>
+ </tileset>
+ <tileset firstgid="40" name="enH0_2" tilewidth="10" tileheight="10">
+  <image source="snow/enH0_2.png" width="90" height="33"/>
+ </tileset>
+ <tileset firstgid="67" name="bsc_0" tilewidth="10" tileheight="10">
+  <image source="snow/bsc_0.png" width="90" height="60"/>
+ </tileset>
+ <tileset firstgid="121" name="nibRef" tilewidth="557" tileheight="265">
+  <image source="nibRef.png" width="557" height="265"/>
+  <tile id="0">
+   <properties>
+    <property name="spawn" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="122" name="slRU_0" tilewidth="10" tileheight="10">
+  <image source="snow/slRU_0.png" width="90" height="90"/>
+ </tileset>
+ <tileset firstgid="203" name="slLU_0" tilewidth="10" tileheight="10">
+  <image source="snow/slLU_0.png" width="90" height="89"/>
+ </tileset>
+ <tileset firstgid="275" name="edU_0" tilewidth="10" tileheight="10">
+  <image source="dung/edU_0.png" width="40" height="62"/>
+ </tileset>
+ <tileset firstgid="299" name="deathCollision" tilewidth="10" tileheight="10">
+  <image source="deathCollision.png" width="10" height="10"/>
+  <tile id="0">
+   <properties>
+    <property name="death" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="300" name="Portal" tilewidth="10" tileheight="10">
+  <image source="Portal.png" width="10" height="10"/>
+  <tile id="0">
+   <properties>
+    <property name="portal" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="SpawnPlayer" width="250" height="119">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OMQ0AAAgDsCX494yEnXC0CpoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD8NtcBAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGIBzBXnZ9jQAQA=
+  </data>
+ </layer>
+ <layer name="Camera" width="250" height="119">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OAQ0AAAgDoM/+oY3xOSEBCQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPDdtAMAAAAAAAAAAAAAAAAAAAAAAAAAAADHLZmss1bY0AEA
+  </data>
+ </layer>
+ <layer name="Boss" width="250" height="119">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OMQ0AAAgDsNnGPcdEEJJWQRMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqLkOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAUwutwcPt2NABAA==
+  </data>
+ </layer>
+ <layer name="Collision" width="250" height="119">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3Y2W4bMRBFQfn/fzoQjMC2oGUWcti8rAL4ZMcWevpkmHzdbrcvx3Ecx3EiDpBH55BP55BP55BP55BP55BP55BP55BP55BP55BP55BP55BP55BP55BP55BP55BP55BP55BP55BP55BP55BP55BP55BP55BP55BP55BP55BP55BP55BP55BP55BP55BP55BP55BP55BP55BP55BP55BP55BP55BP55BP55BP55BP55BP55BP5+x99vZkPjpf25Fnb1/mo/M1PT73o53bmTl4Zut51viZzu1NfZ7Xenp0bn9q85zW07NzO1STZ7Se3p3bo3o8n/Vc0bldqsWzWY/O1+PZ5Pn0LHW+Hs8my5ZnqfP1eDY5tj7LVp1/+tnUofP57e221/v88WvUofO5bb1Dt7xnt+rcvl1H5/Nq2fiIe7udu47O59S68VHvc7t3DbOeS4++q3Ru//ox53n0bHzkvV3v/ZnvHHr20PJ9/u7rvf7e4TOzre2KFnSez2zruqqDlvf224evvfpZOu/LbGu6cv9bv8+P/n672I/Z1nP1O07n+cy2jlF32Nb39qO/3y72Y7Y1jNx17/N8Zjve6D2fuXM7u43Oxxnd9+Pn6PX9W3/e0c7t7Wejd2xVFfp+/Cx7v7/l5z/bud19r8quraTazFM6rzLPiszoWhX3cvS9/ffPbNF5hZlWYz7XqLyPVd/nZw8/zKa/6nuY2nm1OY9kJn3NsHdV7+1ab8c8+php32Z+n2/986szj/Zm27cKnZ+l8/fMo60Z963Cvb2F2eZ+JfNoZ8bG7xLe53czzv4q5nHenn9HVpTS+V3lzzaSeZwza9u/pdzb72Z/Fr2Yx3EJjd95n+czj/1mvqM/o/N85rFPWuN37u35zGO7tL7/8z7PZx7bJO+PzvOZx3sr7I17ez7zeG2V2Xif5zOP51aaS0rnqf9/0oJ5/LXijqTc23X+mnn8WHU/vM/zmce3leeg83zm8W3lGbi353s3G8dxHMdx5joAAAAAAAAAAAAAAAAAAAAAAADM4R/BJxL92NABAA==
+  </data>
+ </layer>
+ <layer name="Death" width="250" height="119">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3TMQ0AAAjAMNCDf38Y4ODgIWmTSVgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzCp3AX/5HAAAAAAAAAAAAAAAAAAAAAAAAAAAbjQsYiN12NABAA==
+  </data>
+ </layer>
+ <layer name="Portal" width="250" height="119">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OAQ0AAAgDoNvH/vmM4aaQgAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC4pmt7AAAAAAAAAAAAAAAAAAAAAAAAAAAA8MsATeCnWtjQAQA=
+  </data>
+ </layer>
+ <layer name="Platform" width="250" height="119">
+  <data encoding="base64" compression="gzip">
+   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
+  </data>
+ </layer>
+</map>

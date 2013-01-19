@@ -1,0 +1,19 @@
+<i>
+  <i image="skill1_0.png" delay="100" x="-40" y="-56"/>
+  <i image="skill1_1.png" delay="100" x="-40" y="-56"/>
+  <i image="skill1_2.png" delay="100" x="-40" y="-56"/>
+  <i image="skill1_3.png" delay="100" x="-40" y="-56"/>
+  <i image="fly_0.png" delay="100" x="-40" y="-56"/>
+  <i image="fly_1.png" delay="100" x="-40" y="-56"/>
+  <i image="fly_2.png" delay="100" x="-40" y="-56"/>
+  <i image="fly_3.png" delay="100" x="-40" y="-56"/>
+  <i image="hit1_0.png" delay="100" x="-40" y="-56"/>
+  <i image="hit1_1.png" delay="100" x="-40" y="-56"/>
+  <i image="hit1_2.png" delay="100" x="-40" y="-56"/>
+  <i image="hit1_3.png" delay="100" x="-40" y="-56"/>
+  <i image="die1_0.png" delay="100" x="-40" y="-56"/>
+  <i image="die1_1.png" delay="100" x="-40" y="-56"/>
+  <i image="die1_2.png" delay="100" x="-40" y="-56"/>
+  <i image="die1_3.png" delay="100" x="-40" y="-56"/>
+  <i image="attack1.info.hit_0.png" delay="100" x="0" y="0"/>
+</i>

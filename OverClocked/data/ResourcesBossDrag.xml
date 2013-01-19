@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<!-- basedir -->
+	<basedir path="data/" />
+	<!-- sounds -->
+	
+	<!-- songs -->
+	
+	<!-- images -->
+
+	
+		//Nibelum///////////////////
+		
+		<image key="dragStand1" file="MainGame/enemies/dragon/stand_0.png"/>
+		<image key="dragStand2" file="MainGame/enemies/dragon/stand_1.png"/>
+		<image key="dragStand3" file="MainGame/enemies/dragon/stand_2.png"/>
+		<image key="dragStand4" file="MainGame/enemies/dragon/stand_3.png"/>
+		<image key="dragStand5" file="MainGame/enemies/dragon/stand_4.png"/>
+		<image key="dragStand6" file="MainGame/enemies/dragon/stand_5.png"/>
+		
+		<image key="dragMissile1" file="MainGame/enemies/dragon/attack1_0.png"/>
+		<image key="dragMissile2" file="MainGame/enemies/dragon/attack1_1.png"/>
+		<image key="dragMissile3" file="MainGame/enemies/dragon/attack1_2.png"/>
+		<image key="dragMissile4" file="MainGame/enemies/dragon/attack1_3.png"/>
+		<image key="dragMissile5" file="MainGame/enemies/dragon/attack1_4.png"/>
+		<image key="dragMissile6" file="MainGame/enemies/dragon/attack1_5.png"/>
+		<image key="dragMissile7" file="MainGame/enemies/dragon/attack1_6.png"/>
+		<image key="dragMissile8" file="MainGame/enemies/dragon/attack1_7.png"/>
+		<image key="dragMissile9" file="MainGame/enemies/dragon/attack1_8.png"/>
+		<image key="dragMissile10" file="MainGame/enemies/dragon/attack1_9.png"/>
+		
+                <image key="dragFlame0" file="MainGame/enemies/dragon/attack2_0.png"/>
+                <image key="dragFlame1" file="MainGame/enemies/dragon/attack2_1.png"/>
+                <image key="dragFlame2" file="MainGame/enemies/dragon/attack2_2.png"/>
+                <image key="dragFlame3" file="MainGame/enemies/dragon/attack2_3.png"/>
+                <image key="dragFlame4" file="MainGame/enemies/dragon/attack2_4.png"/>
+                <image key="dragFlame5" file="MainGame/enemies/dragon/attack2_5.png"/>
+                <image key="dragFlame6" file="MainGame/enemies/dragon/attack2_6.png"/>
+                <image key="dragFlame7" file="MainGame/enemies/dragon/attack2_7.png"/>
+                <image key="dragFlame8" file="MainGame/enemies/dragon/attack2_8.png"/>
+                <image key="dragFlame9" file="MainGame/enemies/dragon/attack2_9.png"/>
+                <image key="dragFlame10" file="MainGame/enemies/dragon/attack2_10.png"/>
+                <image key="dragFlame11" file="MainGame/enemies/dragon/attack2_11.png"/>
+                <image key="dragFlame12" file="MainGame/enemies/dragon/attack2_12.png"/>
+                <image key="dragFlame13" file="MainGame/enemies/dragon/attack2_13.png"/>
+                <image key="dragFlame14" file="MainGame/enemies/dragon/attack2_14.png"/>
+                <image key="dragFlame15" file="MainGame/enemies/dragon/attack2_15.png"/>
+                <image key="dragFlame16" file="MainGame/enemies/dragon/attack2_16.png"/>
+                <image key="dragFlame17" file="MainGame/enemies/dragon/attack2_17.png"/>
+                <image key="dragFlame18" file="MainGame/enemies/dragon/attack2_18.png"/>
+                <image key="dragFlame19" file="MainGame/enemies/dragon/attack2_19.png"/>
+               
+                
+                <image key="dragRush0" file="MainGame/enemies/dragon/attack3_0.png"/>
+                <image key="dragRush1" file="MainGame/enemies/dragon/attack3_1.png"/>
+                <image key="dragRush2" file="MainGame/enemies/dragon/attack3_2.png"/>
+                <image key="dragRush3" file="MainGame/enemies/dragon/attack3_3.png"/>
+                <image key="dragRush4" file="MainGame/enemies/dragon/attack3_4.png"/>
+                <image key="dragRush5" file="MainGame/enemies/dragon/attack3_5.png"/>
+                <image key="dragRush6" file="MainGame/enemies/dragon/attack3_6.png"/>
+                <image key="dragRush7" file="MainGame/enemies/dragon/attack3_7.png"/>
+                <image key="dragRush8" file="MainGame/enemies/dragon/attack3_8.png"/>
+                <image key="dragRush9" file="MainGame/enemies/dragon/attack3_9.png"/>
+                <image key="dragRush10" file="MainGame/enemies/dragon/attack3_10.png"/>
+                <image key="dragRush11" file="MainGame/enemies/dragon/attack3_11.png"/>
+                <image key="dragRush12" file="MainGame/enemies/dragon/attack3_12.png"/>
+                <image key="dragRush13" file="MainGame/enemies/dragon/attack3_13.png"/>
+                <image key="dragRush14" file="MainGame/enemies/dragon/attack3_14.png"/>
+                <image key="dragRush15" file="MainGame/enemies/dragon/attack3_15.png"/>
+                <image key="dragRush16" file="MainGame/enemies/dragon/attack3_16.png"/>
+				<image key="dragRush17" file="MainGame/enemies/dragon/attack3_17.png"/>
+                <image key="dragRush18" file="MainGame/enemies/dragon/attack3_18.png"/>
+                
+            
+                <image key="dragBullet1" file="MainGame/enemies/dragon/bullet1.png"/>
+                <image key="dragBullet2" file="MainGame/enemies/dragon/bullet2.png"/>
+                <image key="dragBullet3" file="MainGame/enemies/dragon/bullet3.png"/>
+               
+               
+				
+                <image key="dragDie0" file="MainGame/enemies/dragon/die1_0.png"/>
+                <image key="dragDie1" file="MainGame/enemies/dragon/die1_1.png"/>
+                <image key="dragDie2" file="MainGame/enemies/dragon/die1_2.png"/>
+                <image key="dragDie3" file="MainGame/enemies/dragon/die1_3.png"/>
+                <image key="dragDie4" file="MainGame/enemies/dragon/die1_4.png"/>
+                <image key="dragDie5" file="MainGame/enemies/dragon/die1_5.png"/>
+                <image key="dragDie6" file="MainGame/enemies/dragon/die1_6.png"/>
+	
+		
+	<!-- sheets -->
+	<!-- fonts -->
+</resources>

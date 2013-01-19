@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<!-- basedir -->
+	<basedir path="data/" />
+	<!-- sounds -->
+	<sound key="pistol1" file="Sounds/pistol1.ogg"/>
+	<sound key="pistol2" file="Sounds/pistol2.ogg"/>
+	<sound key="reload" file="Sounds/reload.ogg"/>
+	<sound key="shoopDaWhoop" file="Sounds/shoopDaWhoop.ogg"/>
+	<sound key="splash" file="Sounds/splash.ogg"/>
+	<sound key="ThunderStorm" file="Sounds/ThunderStorm.ogg"/>
+	<!-- songs -->
+	<music key="menuTheme" file="Music/menuTheme.ogg"/>
+	<music key="menuThemeShort" file="Music/menuThemeShort.ogg"/>
+	<music key="ZeroAllies" file="Music/ZeroAllies.ogg"/>
+	<music key="gameOver" file="Music/gameOver.ogg"/>
+		
+
+	<!-- images -->
+
+	//Menu
+	<image key="menuoptions" file="Interface/menuoptions.png"/>
+	<image key="menuText" file="Interface/menuText.png"/>
+	<image key="credits" file="Background/Credits.png"/>
+	<image key="instructions" file="Background/instructions.png"/>
+	<image key="menuBackground" file="Background/menuBackground.png"/>
+	//Story Level Selector
+	<image key="storylevelselector" file="Background/StoryLevelSelector.png"/>
+	//MainGame
+	<image key="GUIHacks" file="MainGame/GUIHacks.png"/>
+	<image key="GUIHealth" file="MainGame/GUIHealth.png"/>
+	<image key="GUIGun" file="MainGame/GUIGun.png"/>
+	<image key="gameOver" file="MainGame/gameover.jpg"/>
+	
+	<image key="portal1" file="MainGame/portal/1.png"/>
+	<image key="portal2" file="MainGame/portal/2.png"/>
+	<image key="portal3" file="MainGame/portal/3.png"/>
+	<image key="portal4" file="MainGame/portal/4.png"/>
+	<image key="portal5" file="MainGame/portal/5.png"/>
+	<image key="portal6" file="MainGame/portal/6.png"/>
+	<image key="portal7" file="MainGame/portal/7.png"/>
+		//Bosses//////////////////////////////////////
+	
+		//Player pics
+	<image key="mShooting1" file="MainGame/Shooting1.png"/>
+	<image key="mShooting1f2" file="MainGame/Shooting1f2.png"/>
+	<image key="mShooting2" file="MainGame/Shooting2.png"/>
+	<image key="mShooting3" file="MainGame/Shooting3.png"/>
+	<image key="mShooting4" file="MainGame/Shooting4.png"/>
+	<image key="mShooting5" file="MainGame/Shooting5.png"/>
+		
+	<image key="mWalkingRight0" file="MainGame/WalkingR0.png"/>
+	<image key="mWalkingRight1" file="MainGame/WalkingR1.png"/>
+	<image key="mWalkingRight2" file="MainGame/WalkingR2.png"/>
+	<image key="mWalkingRight3" file="MainGame/WalkingR3.png"/>
+	<image key="mWalkingRight4" file="MainGame/WalkingR4.png"/>
+	<image key="mWalkingRight5" file="MainGame/WalkingR5.png"/>
+	<image key="mWalkingRight6" file="MainGame/WalkingR6.png"/>
+	<image key="mWalkingRight7" file="MainGame/WalkingR7.png"/>
+	<image key="mWalkingRight8" file="MainGame/WalkingR8.png"/>
+	<image key="mWalkingRight9" file="MainGame/WalkingR9.png"/>
+	<image key="mWalkingRight10" file="MainGame/WalkingR10.png"/>
+				
+	<image key="mJUP1" file="MainGame/JumpingUp1.png"/>
+	<image key="mJUP2" file="MainGame/JumpingUp2.png"/>
+	<image key="mJUP3" file="MainGame/JumpingUp3.png"/>
+	<image key="mJUP4" file="MainGame/JumpingUp4.png"/>
+	
+	<image key="mJDOWN1" file="MainGame/JumpingDown1.png"/>
+	
+	<image key="mHit1" file="MainGame/Hit1.png"/>
+	<image key="mHit2" file="MainGame/Hit2.png"/>
+	
+	<image key="mProne" file="MainGame/Prone.png"/>
+	<image key="mProneHit" file="MainGame/ProneHit.png"/>
+
+	<image key="mSDW" file="MainGame/sdw.png"/>
+	//Player HAck Effects
+	<image key="mw1" file="MainGame/wings/1.png"/>
+	<image key="mw2" file="MainGame/wings/2.png"/>
+	<image key="mw3" file="MainGame/wings/3.png"/>
+	<image key="mw4" file="MainGame/wings/4.png"/>
+	<image key="mw5" file="MainGame/wings/5.png"/>
+	<image key="mw6" file="MainGame/wings/6.png"/>
+	<image key="mw7" file="MainGame/wings/7.png"/>
+	<image key="mw8" file="MainGame/wings/8.png"/>
+	<image key="mw9" file="MainGame/wings/9.png"/>
+	<image key="mw10" file="MainGame/wings/10.png"/>
+	<image key="mw11" file="MainGame/wings/11.png"/>
+	<image key="mw12" file="MainGame/wings/12.png"/>
+	
+	
+	//Player Bullets
+	<image key="sb1" file="MainGame/sb/15_11.png"/>
+	<image key="sb2" file="MainGame/sb/15_12.png"/>
+	<image key="sb3" file="MainGame/sb/15_13.png"/>
+	<image key="sb4" file="MainGame/sb/15_14.png"/>
+	<image key="sb5" file="MainGame/sb/15_15.png"/>
+	<image key="sb6" file="MainGame/sb/15_16.png"/>
+	<image key="sb7" file="MainGame/sb/15_17.png"/>
+	<image key="sb8" file="MainGame/sb/15_18.png"/>
+	<image key="sb9" file="MainGame/sb/15_19.png"/>
+	<image key="sb10" file="MainGame/sb/15_20.png"/>
+	<image key="sb11" file="MainGame/sb/15_21.png"/>
+	<image key="sb12" file="MainGame/sb/15_22.png"/>
+	<image key="sb13" file="MainGame/sb/15_23.png"/>
+	<image key="sb14" file="MainGame/sb/15_24.png"/>
+	<image key="sb15" file="MainGame/sb/15_25.png"/>
+	
+	<image key="sdw1" file="MainGame/sdw/effect_1.png"/>
+	<image key="sdw2" file="MainGame/sdw/effect_2.png"/>
+	<image key="sdw3" file="MainGame/sdw/effect_3.png"/>
+	<image key="sdw4" file="MainGame/sdw/effect_4.png"/>
+	<image key="sdw5" file="MainGame/sdw/effect_5.png"/>
+	<image key="sdw6" file="MainGame/sdw/effect_6.png"/>
+	<image key="sdw7" file="MainGame/sdw/effect_7.png"/>
+	<image key="sdw8" file="MainGame/sdw/effect_8.png"/>
+	<image key="sdw9" file="MainGame/sdw/effect_9.png"/>
+	<image key="sdw10" file="MainGame/sdw/effect_10.png"/>
+	<image key="sdw11" file="MainGame/sdw/effect_11.png"/>
+	<image key="sdw12" file="MainGame/sdw/effect_12.png"/>
+	<image key="sdw13" file="MainGame/sdw/effect_13.png"/>
+	<image key="sdw14" file="MainGame/sdw/effect_14.png"/>
+	<image key="sdw15" file="MainGame/sdw/effect_15.png"/>
+	<image key="sdw16" file="MainGame/sdw/effect_16.png"/>
+	
+	<image key="ts1" file="MainGame/thunderStorm/effect_21.png"/>
+	<image key="ts2" file="MainGame/thunderStorm/effect_22.png"/>
+	<image key="ts3" file="MainGame/thunderStorm/effect_23.png"/>
+	<image key="ts4" file="MainGame/thunderStorm/effect_24.png"/>
+	<image key="ts5" file="MainGame/thunderStorm/effect_25.png"/>
+	<image key="ts6" file="MainGame/thunderStorm/effect_26.png"/>
+	<image key="ts7" file="MainGame/thunderStorm/effect_27.png"/>
+	<image key="ts8" file="MainGame/thunderStorm/effect_28.png"/>
+	<image key="ts9" file="MainGame/thunderStorm/effect_29.png"/>
+	<image key="ts10" file="MainGame/thunderStorm/effect_30.png"/>
+	<image key="ts11" file="MainGame/thunderStorm/effect_31.png"/>
+	<image key="ts12" file="MainGame/thunderStorm/effect_32.png"/>
+	<image key="ts13" file="MainGame/thunderStorm/effect_33.png"/>
+	
+	<image key="s1" file="MainGame/shield/1.png"/>
+	<image key="s2" file="MainGame/shield/2.png"/>
+	<image key="s3" file="MainGame/shield/3.png"/>
+	<image key="s4" file="MainGame/shield/4.png"/>
+	<image key="s5" file="MainGame/shield/5.png"/>
+	<image key="s6" file="MainGame/shield/6.png"/>
+	<image key="s7" file="MainGame/shield/7.png"/>
+	<image key="s8" file="MainGame/shield/8.png"/>
+	<image key="s9" file="MainGame/shield/9.png"/>
+	<image key="s10" file="MainGame/shield/10.png"/>
+	<image key="s11" file="MainGame/shield/11.png"/>
+	
+	//MainGameEnemies
+	
+	<image key="sentShoot2" file="MainGame/enemies/redsent/attack1_1.png"/>
+	<image key="sentShoot3" file="MainGame/enemies/redsent/attack1_2.png"/>
+	<image key="sentShoot4" file="MainGame/enemies/redsent/attack1_3.png"/>
+	<image key="sentShoot5" file="MainGame/enemies/redsent/attack1_4.png"/>
+	<image key="sentShoot6" file="MainGame/enemies/redsent/attack1_5.png"/>
+	<image key="sentShoot7" file="MainGame/enemies/redsent/attack1_6.png"/>
+	<image key="sentShoot8" file="MainGame/enemies/redsent/attack1_7.png"/>	
+	<image key="sentShoot9" file="MainGame/enemies/redsent/attack1_8.png"/>	
+	<image key="sentShoot10" file="MainGame/enemies/redsent/attack1_9.png"/>	
+	<image key="sentShoot11" file="MainGame/enemies/redsent/attack1_10.png"/>	
+	<image key="sentShoot12" file="MainGame/enemies/redsent/attack1_11.png"/>	
+	<image key="sentShoot13" file="MainGame/enemies/redsent/attack1_12.png"/>	
+	<image key="sentShoot14" file="MainGame/enemies/redsent/attack1_13.png"/>	
+	<image key="sentShoot15" file="MainGame/enemies/redsent/attack1_14.png"/>	
+	<image key="sentShoot16" file="MainGame/enemies/redsent/attack1_15.png"/>	
+	<image key="sentShoot17" file="MainGame/enemies/redsent/attack1_16.png"/>	
+	<image key="sentShoot18" file="MainGame/enemies/redsent/attack1_17.png"/>	
+
+	<image key="sentBullet1" file="MainGame/enemies/redsent/Bullet1_0.png"/>
+	<image key="sentBullet2" file="MainGame/enemies/redsent/Bullet1_1.png"/>
+	<image key="sentBullet3" file="MainGame/enemies/redsent/Bullet1_2.png"/>
+	<image key="sentBullet4" file="MainGame/enemies/redsent/Bullet1_3.png"/>
+	<image key="sentBullet5" file="MainGame/enemies/redsent/Bullet1_4.png"/>
+	<image key="sentBullet6" file="MainGame/enemies/redsent/Bullet1_5.png"/>
+	<image key="sentBullet7" file="MainGame/enemies/redsent/Bullet1_6.png"/>
+	<image key="sentBullet8" file="MainGame/enemies/redsent/Bullet1_7.png"/>
+	
+	<image key="sentDie1" file="MainGame/enemies/redsent/die1_0.png"/>
+	<image key="sentDie2" file="MainGame/enemies/redsent/die1_1.png"/>
+	<image key="sentDie3" file="MainGame/enemies/redsent/die1_2.png"/>
+	<image key="sentDie4" file="MainGame/enemies/redsent/die1_3.png"/>
+	<image key="sentDie5" file="MainGame/enemies/redsent/die1_4.png"/>
+	<image key="sentDie6" file="MainGame/enemies/redsent/die1_5.png"/>
+	
+	<image key="droidShoot1" file="MainGame/enemies/bluedroid/attack1_0.png"/>
+	<image key="droidShoot2" file="MainGame/enemies/bluedroid/attack1_1.png"/>
+	<image key="droidShoot3" file="MainGame/enemies/bluedroid/attack1_2.png"/>
+	<image key="droidShoot4" file="MainGame/enemies/bluedroid/attack1_3.png"/>
+	<image key="droidShoot5" file="MainGame/enemies/bluedroid/attack1_4.png"/>
+	<image key="droidShoot6" file="MainGame/enemies/bluedroid/attack1_5.png"/>
+	<image key="droidShoot7" file="MainGame/enemies/bluedroid/attack1_6.png"/>
+	<image key="droidShoot8" file="MainGame/enemies/bluedroid/attack1_7.png"/>
+	<image key="droidShoot9" file="MainGame/enemies/bluedroid/attack1_8.png"/>
+	<image key="droidShoot10" file="MainGame/enemies/bluedroid/attack1_9.png"/>
+	
+	<image key="droidDie1" file="MainGame/enemies/bluedroid/die1_0.png"/>
+	<image key="droidDie2" file="MainGame/enemies/bluedroid/die1_1.png"/>
+	<image key="droidDie3" file="MainGame/enemies/bluedroid/die1_2.png"/>
+	<image key="droidDie4" file="MainGame/enemies/bluedroid/die1_3.png"/>
+	<image key="droidDie5" file="MainGame/enemies/bluedroid/die1_4.png"/>
+	<image key="droidDie6" file="MainGame/enemies/bluedroid/die1_5.png"/>
+	<image key="droidDie7" file="MainGame/enemies/bluedroid/die1_6.png"/>
+	
+	<image key="droidMove1" file="MainGame/enemies/bluedroid/move_0.png"/>
+	<image key="droidMove2" file="MainGame/enemies/bluedroid/move_1.png"/>
+	<image key="droidMove3" file="MainGame/enemies/bluedroid/move_2.png"/>
+	<image key="droidMove4" file="MainGame/enemies/bluedroid/move_3.png"/>
+	<image key="droidBullet" file="MainGame/enemies/bluedroid/bullet.png"/>
+	
+	
+	<image key="soldShoot2" file="MainGame/enemies/Soldier/attack2_1.png"/>
+	<image key="soldShoot3" file="MainGame/enemies/Soldier/attack2_2.png"/>
+	<image key="soldShoot4" file="MainGame/enemies/Soldier/attack2_3.png"/>
+	<image key="soldShoot5" file="MainGame/enemies/Soldier/attack2_4.png"/>
+	<image key="soldShoot6" file="MainGame/enemies/Soldier/attack2_5.png"/>
+	<image key="soldShoot7" file="MainGame/enemies/Soldier/attack2_6.png"/>
+	<image key="soldShoot8" file="MainGame/enemies/Soldier/attack2_7.png"/>
+	<image key="soldShoot9" file="MainGame/enemies/Soldier/attack2_8.png"/>
+	<image key="soldShoot10" file="MainGame/enemies/Soldier/attack2_9.png"/>
+	<image key="soldShoot11" file="MainGame/enemies/Soldier/attack2_10.png"/>
+	<image key="soldShoot12" file="MainGame/enemies/Soldier/attack2_11.png"/>
+	<image key="soldShoot13" file="MainGame/enemies/Soldier/attack2_12.png"/>
+	<image key="soldShoot14" file="MainGame/enemies/Soldier/attack2_13.png"/>
+	<image key="soldShoot15" file="MainGame/enemies/Soldier/attack2_14.png"/>
+	<image key="soldShoot16" file="MainGame/enemies/Soldier/attack2_15.png"/>
+	
+	
+	
+	<image key="soldDie1" file="MainGame/enemies/Soldier/die1_0.png"/>
+	<image key="soldDie2" file="MainGame/enemies/Soldier/die1_1.png"/>
+	<image key="soldDie3" file="MainGame/enemies/Soldier/die1_2.png"/>
+	<image key="soldDie4" file="MainGame/enemies/Soldier/die1_3.png"/>
+	<image key="soldDie5" file="MainGame/enemies/Soldier/die1_4.png"/>
+	<image key="soldDie6" file="MainGame/enemies/Soldier/die1_5.png"/>
+	<image key="soldDie7" file="MainGame/enemies/Soldier/die1_6.png"/>
+	<image key="soldDie8" file="MainGame/enemies/Soldier/die1_7.png"/>
+	<image key="soldDie9" file="MainGame/enemies/Soldier/die1_8.png"/>
+	
+	<image key="soldMove1" file="MainGame/enemies/Soldier/move_0.png"/>
+	<image key="soldMove2" file="MainGame/enemies/Soldier/move_1.png"/>
+	<image key="soldMove3" file="MainGame/enemies/Soldier/move_2.png"/>
+	<image key="soldMove4" file="MainGame/enemies/Soldier/move_3.png"/>
+	<image key="soldMove5" file="MainGame/enemies/Soldier/move_4.png"/>
+	<image key="soldMove6" file="MainGame/enemies/Soldier/move_5.png"/>
+	
+	<image key="soldMove1b" file="MainGame/enemies/Soldier/move_0b.png"/>
+	<image key="soldMove2b" file="MainGame/enemies/Soldier/move_1b.png"/>
+	<image key="soldMove3b" file="MainGame/enemies/Soldier/move_2b.png"/>
+	<image key="soldMove4b" file="MainGame/enemies/Soldier/move_3b.png"/>
+	<image key="soldMove5b" file="MainGame/enemies/Soldier/move_4b.png"/>
+	<image key="soldMove6b" file="MainGame/enemies/Soldier/move_5b.png"/>
+	
+	<image key="soldBullet1" file="MainGame/enemies/soldierBullet/ball_0.png"/>
+	<image key="soldBullet2" file="MainGame/enemies/soldierBullet/ball_1.png"/>
+	<image key="soldBullet3" file="MainGame/enemies/soldierBullet/ball_2.png"/>
+	<image key="soldBullet4" file="MainGame/enemies/soldierBullet/ball_3.png"/>
+	<image key="soldBullet5" file="MainGame/enemies/soldierBullet/ball_4.png"/>
+	<image key="soldBullet6" file="MainGame/enemies/soldierBullet/ball_5.png"/>
+	
+	//Case 1
+	<image key="squidMonster" file="Case 1/squidMonster.png" />
+	<image key="squidMonsterMove" file="Case 1/squidMonsterMove.png" />
+	<image key="blackHead" file="Case 1/blackHead.png" />
+	//Case 2
+	<image key="orb1" file="Case 2/fly_0.png"/>
+	<image key="orb2" file="Case 2/fly_1.png"/>
+	<image key="orb3" file="Case 2/fly_2.png"/>
+	<image key="orb4" file="Case 2/fly_3.png"/>
+	<image key="troncircle1" file="Case 2/troncircle1.png"/>
+	<image key="troncircle2" file="Case 2/troncircle2.png"/>
+	//Case 3
+	<image key="paddle" file="Case 3/paddle.png"/>
+	<image key="pongBall" file="Case 3/ball.png"/>
+	//Case 4
+	//Case 5
+	//Case 6
+	<image key="cannon" file="Case 6/Player6.png"/>
+	<image key="laser" file="Case 6/laser.png"/>
+	<image key = "glab2" file="Background/glab2.png"/>
+	//Case 7
+	//Case 8
+	//Case 9
+	<image key="crosshair" file="Case 9/crosshair.png"/>
+		<image key="crosshair2" file="Case 9/crosshair2.png"/>
+	<image key="zPlayer1" file="Case 9/zPlayer1.png"/>
+	<image key="zPlayer2" file="Case 9/zPlayer2.png"/>
+	<image key="bullet" file="Case 9/bullet.png"/>
+	//Case 10
+	//Case 11
+	<image key="blackExplosion" 		file="Explosions/blackExplosion.png"/>
+	<image key="blackExplosion2" 	file="Explosions/blackExplosion2.png"/>
+	<image key="blackExplosion3" 	file="Explosions/blackExplosion3.png"/>
+	<image key="blackExplosion4" 	file="Explosions/blackExplosion4.png"/>
+	<image key="blackExplosion5" 	file="Explosions/blackExplosion5.png"/>
+	<image key="player" file="Case 11/player.png" />
+	//Case 12
+	//Case 13
+	//Case 14
+	<image key ="catcher" file="Case 11/catcher.png"/>
+	//Case 15
+	<image key="drivingTarget" file="Case 15/drivingTarget.png"/>
+	<image key="car" file="Case 15/infernus.png"/>
+	//Case 16
+	//Case 17
+	//Case 18
+	<image key="civilian" file="Case 18/Civilian.png"/>
+	<image key="terrorist" file="Case 18/Terrorist.png"/>
+    //Case 19
+    <image key="scaredPlayer" file="Case 19/cursorPlayer.png"/>
+	//Backgrounds
+	<image key="forest1" file="Background/forest1.png"/>
+	<image key="snow1" file="Background/snow1.png"/>
+	<image key="japan1" file="Background/japan1.png"/>
+	<image key="dung1" file="Background/dung1.png"/>
+	<image key="dung2" file="Background/dung2.png"/>
+	<image key="storybackground" file="Background/storyBackground.png"/>
+	<image key="loadout" file="Hacks/LoadOut.png"/>
+	<image key="background" file="Background/background.jpg"/>
+	<image key="street" file="Case 15/streetBackground.png"/>
+	//Hacks
+	<image key="hMenuDef" file="Hacks/HacksMenuDefense.png"/>
+	<image key="hMenuPow" file="Hacks/HacksMenuPower.png"/>
+	<image key="hMenuUtil" file="Hacks/HacksMenuUtility.png"/>
+	<image key="hMenuPass" file="Hacks/HacksMenuPassive.png"/>
+	
+	<image key="EnergyOrbs" file="Hacks/Icons50/EnergyOrbs.png"/>
+	<image key="Fly" file="Hacks/Icons50/Fly.png"/>
+	<image key="Haste" file="Hacks/Icons50/Haste.png"/>
+	<image key="HpIncrease" file="Hacks/Icons50/HpIncrease.png"/>
+	<image key="InfiniteAmmo" file="Hacks/Icons50/InfiniteAmmo.png"/>
+	<image key="Invincible" file="Hacks/Icons50/Invincible.png"/>
+	<image key="NoClip" file="Hacks/Icons50/NoClip.png"/>
+	<image key="PiercingShot" file="Hacks/Icons50/PiercingShot.png"/>
+	<image key="PowerGuard" file="Hacks/Icons50/PowerGuard.png"/>
+	<image key="SharpEyes" file="Hacks/Icons50/SharpEyes.png"/>
+	<image key="Shield" file="Hacks/Icons50/Shield.png"/>
+	<image key="Shoop" file="Hacks/Icons50/Shoop.png"/>
+	<image key="Stance" file="Hacks/Icons50/Stance.png"/>
+	<image key="Storm" file="Hacks/Icons50/Storm.png"/>
+	<image key="Teleport" file="Hacks/Icons50/Teleport.png"/>
+	<image key="Freeze" file="Hacks/Icons50/TimeFreeze.png"/>
+	<image key="BattleGrieves" file="Hacks/Icons50/BattleGrieves.png"/>
+	
+	<image key="EnergyOrbsBW" file="Hacks/Icons50/EnergyOrbsBW.png"/>
+	<image key="FlyBW" file="Hacks/Icons50/FlyBW.png"/>
+	<image key="InvincibleBW" file="Hacks/Icons50/InvincibleBW.png"/>
+	<image key="NoClipBW" file="Hacks/Icons50/NoClipBW.png"/>
+	<image key="PiercingShotBW" file="Hacks/Icons50/PiercingShotBW.png"/>
+	<image key="ShieldBW" file="Hacks/Icons50/ShieldBW.png"/>
+	<image key="ShoopBW" file="Hacks/Icons50/ShoopBW.png"/>
+	<image key="StormBW" file="Hacks/Icons50/StormBW.png"/>
+	<image key="TeleportBW" file="Hacks/Icons50/TeleportBW.png"/>
+	<image key="FreezeBW" file="Hacks/Icons50/TimeFreezeBW.png"/>
+	<image key="BattleGrievesBW" file="Hacks/Icons50/BattleGrievesBW.png"/>
+	
+    <image key="buy" file="Hacks/Buy.png"/>
+    <image key="activate" file="Hacks/Activate.png"/>   
+	<!-- sheets -->
+	<!-- fonts -->
+</resources>

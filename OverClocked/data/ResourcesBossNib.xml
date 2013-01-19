@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<!-- basedir -->
+	<basedir path="data/" />
+	<!-- sounds -->
+	
+	<!-- songs -->
+	
+	<!-- images -->
+
+	
+		//Nibelum///////////////////
+                <image key="nibelStand" file="MainGame/enemies/Nibelung/attack2_0.png"/>
+                <image key="nibelLaser1" file="MainGame/enemies/Nibelung/attack2_1.png"/>
+                <image key="nibelLaser2" file="MainGame/enemies/Nibelung/attack2_2.png"/>
+                <image key="nibelLaser3" file="MainGame/enemies/Nibelung/attack2_3.png"/>
+                <image key="nibelLaser4" file="MainGame/enemies/Nibelung/attack2_4.png"/>
+                <image key="nibelLaser5" file="MainGame/enemies/Nibelung/attack2_5.png"/>
+                <image key="nibelLaser6" file="MainGame/enemies/Nibelung/attack2_6.png"/>
+                <image key="nibelLaser7" file="MainGame/enemies/Nibelung/attack2_7.png"/>
+                <image key="nibelLaser8" file="MainGame/enemies/Nibelung/attack2_8.png"/>
+                <image key="nibelLaser9" file="MainGame/enemies/Nibelung/attack2_9.png"/>
+                <image key="nibelLaser10" file="MainGame/enemies/Nibelung/attack2_10.png"/>
+                <image key="nibelLaser11" file="MainGame/enemies/Nibelung/attack2_11.png"/>
+                <image key="nibelLaser12" file="MainGame/enemies/Nibelung/attack2_12.png"/>
+                <image key="nibelLaser13" file="MainGame/enemies/Nibelung/attack2_13.png"/>
+                <image key="nibelLaser14" file="MainGame/enemies/Nibelung/attack2_14.png"/>
+                <image key="nibelLaser15" file="MainGame/enemies/Nibelung/attack2_15.png"/>
+                <image key="nibelLaser16" file="MainGame/enemies/Nibelung/attack2_16.png"/>
+                <image key="nibelLaser17" file="MainGame/enemies/Nibelung/attack2_17.png"/>
+                <image key="nibelLaser18" file="MainGame/enemies/Nibelung/attack2_18.png"/>
+                <image key="nibelLaser19" file="MainGame/enemies/Nibelung/attack2_19.png"/>
+                <image key="nibelLaser20" file="MainGame/enemies/Nibelung/attack2_20.png"/>
+                <image key="nibelLaser21" file="MainGame/enemies/Nibelung/attack2_21.png"/>
+                <image key="nibelLaser22" file="MainGame/enemies/Nibelung/attack2_22.png"/>
+                <image key="nibelLaser23" file="MainGame/enemies/Nibelung/attack2_23.png"/>
+                <image key="nibelLaser24" file="MainGame/enemies/Nibelung/attack2_24.png"/>
+                <image key="nibelLaser25" file="MainGame/enemies/Nibelung/attack2_25.png"/>
+                <image key="nibelLaser26" file="MainGame/enemies/Nibelung/attack2_26.png"/>
+                <image key="nibelLaser27" file="MainGame/enemies/Nibelung/attack2_27.png"/>
+                <image key="nibelLaser28" file="MainGame/enemies/Nibelung/attack2_28.png"/>
+                <image key="nibelLaser29" file="MainGame/enemies/Nibelung/attack2_29.png"/>
+                <image key="nibelLaser30" file="MainGame/enemies/Nibelung/attack2_30.png"/>
+                <image key="nibelLaser31" file="MainGame/enemies/Nibelung/attack2_31.png"/>
+                <image key="nibelLaser32" file="MainGame/enemies/Nibelung/attack2_32.png"/>
+                <image key="nibelLaser33" file="MainGame/enemies/Nibelung/attack2_33.png"/>
+                <image key="nibelLaser34" file="MainGame/enemies/Nibelung/attack2_34.png"/>
+                <image key="nibelLaser35" file="MainGame/enemies/Nibelung/attack2_35.png"/>
+                <image key="nibelLaser36" file="MainGame/enemies/Nibelung/attack2_36.png"/>
+                <image key="nibelLaser37" file="MainGame/enemies/Nibelung/attack2_37.png"/>
+                <image key="nibelLaser38" file="MainGame/enemies/Nibelung/attack2_38.png"/>
+                <image key="nibelLaser39" file="MainGame/enemies/Nibelung/attack2_39.png"/>
+                <image key="nibelLaser40" file="MainGame/enemies/Nibelung/attack2_40.png"/>
+                
+                <image key="nibelBomb0" file="MainGame/enemies/Nibelung/attack3_0.png"/>
+                <image key="nibelBomb1" file="MainGame/enemies/Nibelung/attack3_1.png"/>
+                <image key="nibelBomb2" file="MainGame/enemies/Nibelung/attack3_2.png"/>
+                <image key="nibelBomb3" file="MainGame/enemies/Nibelung/attack3_3.png"/>
+                <image key="nibelBomb4" file="MainGame/enemies/Nibelung/attack3_4.png"/>
+                <image key="nibelBomb5" file="MainGame/enemies/Nibelung/attack3_5.png"/>
+                <image key="nibelBomb6" file="MainGame/enemies/Nibelung/attack3_6.png"/>
+                <image key="nibelBomb7" file="MainGame/enemies/Nibelung/attack3_7.png"/>
+                <image key="nibelBomb8" file="MainGame/enemies/Nibelung/attack3_8.png"/>
+                <image key="nibelBomb9" file="MainGame/enemies/Nibelung/attack3_9.png"/>
+                <image key="nibelBomb10" file="MainGame/enemies/Nibelung/attack3_10.png"/>
+                <image key="nibelBomb11" file="MainGame/enemies/Nibelung/attack3_11.png"/>
+                <image key="nibelBomb12" file="MainGame/enemies/Nibelung/attack3_12.png"/>
+                <image key="nibelBomb13" file="MainGame/enemies/Nibelung/attack3_13.png"/>
+                <image key="nibelBomb14" file="MainGame/enemies/Nibelung/attack3_14.png"/>
+                <image key="nibelBomb15" file="MainGame/enemies/Nibelung/attack3_15.png"/>
+                <image key="nibelBomb16" file="MainGame/enemies/Nibelung/attack3_16.png"/>
+                
+                <image key="nibelBullets0" file="MainGame/enemies/Nibelung/attack4_0.png"/>
+                <image key="nibelBullets1" file="MainGame/enemies/Nibelung/attack4_1.png"/>
+                <image key="nibelBullets2" file="MainGame/enemies/Nibelung/attack4_2.png"/>
+                <image key="nibelBullets3" file="MainGame/enemies/Nibelung/attack4_3.png"/>
+                <image key="nibelBullets4" file="MainGame/enemies/Nibelung/attack4_4.png"/>
+                <image key="nibelBullets5" file="MainGame/enemies/Nibelung/attack4_5.png"/>
+                <image key="nibelBullets6" file="MainGame/enemies/Nibelung/attack4_6.png"/>
+                <image key="nibelBullets7" file="MainGame/enemies/Nibelung/attack4_7.png"/>
+                <image key="nibelBullets8" file="MainGame/enemies/Nibelung/attack4_8.png"/>
+                <image key="nibelBullets9" file="MainGame/enemies/Nibelung/attack4_9.png"/>
+                <image key="nibelBullets10" file="MainGame/enemies/Nibelung/attack4_10.png"/>
+                <image key="nibelBullets11" file="MainGame/enemies/Nibelung/attack4_11.png"/>
+                <image key="nibelBullets12" file="MainGame/enemies/Nibelung/attack4_12.png"/>
+                <image key="nibelBullets13" file="MainGame/enemies/Nibelung/attack4_13.png"/>
+                <image key="nibelBullets14" file="MainGame/enemies/Nibelung/attack4_14.png"/>
+                <image key="nibelBullets15" file="MainGame/enemies/Nibelung/attack4_15.png"/>
+                <image key="nibelBullets16" file="MainGame/enemies/Nibelung/attack4_16.png"/>
+                <image key="nibelBullets17" file="MainGame/enemies/Nibelung/attack4_17.png"/>
+                <image key="nibelBullets18" file="MainGame/enemies/Nibelung/attack4_18.png"/>
+                <image key="nibelBullets19" file="MainGame/enemies/Nibelung/attack4_19.png"/>
+                <image key="nibelBullets20" file="MainGame/enemies/Nibelung/attack4_20.png"/>
+                <image key="nibelBullets21" file="MainGame/enemies/Nibelung/attack4_21.png"/>
+                <image key="nibelBullets22" file="MainGame/enemies/Nibelung/attack4_22.png"/>
+                <image key="nibelBullets23" file="MainGame/enemies/Nibelung/attack4_23.png"/>
+                <image key="nibelBullets24" file="MainGame/enemies/Nibelung/attack4_24.png"/>
+                <image key="nibelBullets25" file="MainGame/enemies/Nibelung/attack4_25.png"/>
+                <image key="nibelBullets26" file="MainGame/enemies/Nibelung/attack4_26.png"/>
+                <image key="nibelBullets27" file="MainGame/enemies/Nibelung/attack4_27.png"/>
+                <image key="nibelBullets28" file="MainGame/enemies/Nibelung/attack4_28.png"/>
+                <image key="nibelBullets29" file="MainGame/enemies/Nibelung/attack4_29.png"/>
+                <image key="nibelBullets30" file="MainGame/enemies/Nibelung/attack4_30.png"/>
+                <image key="nibelBullets31" file="MainGame/enemies/Nibelung/attack4_31.png"/>
+                <image key="nibelBullets32" file="MainGame/enemies/Nibelung/attack4_32.png"/>
+                <image key="nibelBullets33" file="MainGame/enemies/Nibelung/attack4_33.png"/>
+                <image key="nibelBullets34" file="MainGame/enemies/Nibelung/attack4_34.png"/>
+                <image key="nibelBullets35" file="MainGame/enemies/Nibelung/attack4_35.png"/>
+                <image key="nibelBullets36" file="MainGame/enemies/Nibelung/attack4_36.png"/>
+                <image key="nibelBullets37" file="MainGame/enemies/Nibelung/attack4_37.png"/>
+                <image key="nibelBullets38" file="MainGame/enemies/Nibelung/attack4_38.png"/>
+                <image key="nibelBullets39" file="MainGame/enemies/Nibelung/attack4_39.png"/>
+                <image key="nibelBullets40" file="MainGame/enemies/Nibelung/attack4_40.png"/>
+                <image key="nibelBullets41" file="MainGame/enemies/Nibelung/attack4_41.png"/>
+                
+                <image key="nibelHit0" file="MainGame/enemies/Nibelung/hit1_0.png"/>
+                <image key="nibelDie0" file="MainGame/enemies/Nibelung/die1_0.png"/>
+                <image key="nibelDie1" file="MainGame/enemies/Nibelung/die1_1.png"/>
+                <image key="nibelDie2" file="MainGame/enemies/Nibelung/die1_2.png"/>
+                <image key="nibelDie3" file="MainGame/enemies/Nibelung/die1_3.png"/>
+                <image key="nibelDie4" file="MainGame/enemies/Nibelung/die1_4.png"/>
+                <image key="nibelDie5" file="MainGame/enemies/Nibelung/die1_5.png"/>
+                <image key="nibelDie6" file="MainGame/enemies/Nibelung/die1_6.png"/>
+	
+		
+	<!-- sheets -->
+	<!-- fonts -->
+</resources>

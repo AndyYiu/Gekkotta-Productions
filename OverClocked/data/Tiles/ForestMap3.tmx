@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="orthogonal" width="500" height="60" tilewidth="10" tileheight="10">
+ <tileset firstgid="1" name="camera" tilewidth="800" tileheight="600">
+  <image source="camera.png" width="800" height="600"/>
+  <tile id="0">
+   <properties>
+    <property name="camera" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="2" name="Collision" tilewidth="10" tileheight="10">
+  <image source="CollisionTransparent.png" width="10" height="10"/>
+  <tile id="0">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="3" name="deathCollision" tilewidth="10" tileheight="10">
+  <image source="deathCollision.png" width="10" height="10"/>
+  <tile id="0">
+   <properties>
+    <property name="death" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="4" name="Portal" tilewidth="10" tileheight="10">
+  <image source="Portal.png" width="10" height="10"/>
+  <tile id="0">
+   <properties>
+    <property name="portal" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="5" name="sentRef" tilewidth="98" tileheight="69">
+  <image source="sentRef.png" width="98" height="69"/>
+  <tile id="0">
+   <properties>
+    <property name="spawn" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="6" name="SpawnPlayer" tilewidth="10" tileheight="10">
+  <image source="SpawnPlayer.png" width="10" height="10"/>
+  <tile id="0">
+   <properties>
+    <property name="spawn" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="7" name="solRef" tilewidth="178" tileheight="100">
+  <image source="solRef.png" width="178" height="100"/>
+  <tile id="0">
+   <properties>
+    <property name="spawn" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="8" name="droidRef" tilewidth="76" tileheight="81">
+  <image source="droidRef.png" width="76" height="81"/>
+  <tile id="0">
+   <properties>
+    <property name="spawn" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="9" name="Forest_10" tilewidth="10" tileheight="10">
+  <image source="Forest/Forest_10.png" width="90" height="38"/>
+ </tileset>
+ <tileset firstgid="36" name="Forest_19" tilewidth="10" tileheight="10">
+  <image source="Forest/Forest_19.png" width="90" height="60"/>
+ </tileset>
+ <layer name="Death" width="500" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BgQAAAADDoPlT3+AEVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8AyZK0wzwNQBAA==
+  </data>
+ </layer>
+ <layer name="Camera" width="500" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OMQEAAAgDoNm/tBn26AMJSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAuDbfAQAAAAAAAAAAAAAAAAAAAAAAAAAAoLKJ1K+XwNQBAA==
+  </data>
+ </layer>
+ <layer name="SpawnPlayer" width="500" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OIQEAAAgDsCv6R8a8A4gtwRIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPhprgMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFALnyaqBcDUAQA=
+  </data>
+ </layer>
+ <layer name="SpawnEnemySoldier" width="500" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3cvYrCQBQG0HS+iH9oravFolYiWCgi+P5P4nXZQhBEE9mbyZ4DH5li4H6TSZ2qAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoIt6LdsPpejKt13aOUrre9PGzm3s9Expff+zd+7q1b3u/1HWO/nLue4dAAAAAAAAaItZdgEAoJHv7AIAwEdsswsAAI0dsgsAAAAAAAAAAAAAAAAAAADwox8ZRIaRUWSc0GESmSbMBQA+z7/cAaCeeeQrsogsk7sAAPWsIuvIJrkHANDM7m69T2sBANR1/H2eEmaf79aXhPkAAAAAAAAAAAAAAAAAAAAAAAAAAEB5roPeGvDA1AEA
+  </data>
+ </layer>
+ <layer name="SpawnEnemySentinel" width="500" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BgQAAAADDoPlT3+AEVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8AyZK0wzwNQBAA==
+  </data>
+ </layer>
+ <layer name="SpawnEnemyDroid" width="500" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BgQAAAADDoPlT3+AEVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8AyZK0wzwNQBAA==
+  </data>
+ </layer>
+ <layer name="Platform" width="500" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3bWa9UVRgEUF4FBXEERZwnQAXEeR7BAZFB1P//Ryge+qVzQ0i67z51z14rqbdK6juvnd3HjgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAArMsTyfHkRPJk8lRyMjmVPJ2c1lldZ7Smb9fR0dFZa+eZ5NnkueT55IXkxeRMcjZ5SWd1ndGavl1HR0dnrZ2Xk3PJK8n55NXkteT15I3kTZ3VdUZr+nYdHR2dtXbeSt5O3kneTd5L3k8uJBeTS5N3Gm7Yd2e0pm/X2a3TeJPOvJ3Wu5bqfJB8mHyUXE6uJFeTj5NrySeTdxpu2HdntKZv19mt03iTzryd1ruW6nyafJZ8nnyRfJl8lXydfJN8O3mn4YZ9d0Zr+nad3TqNN+nM22m9a6nOd8n3yQ/Jj8lPyc/JL8mvyfXJOw037Ltz2LZ/B2r6dp3dOo036czbab1rqc6N5Lfk9+SP5M/kZvJXciv5e/JOww377hy27d+Bmr5dZ7dO400683Za71qqczu5k9xN7iX/JPeTf5P/kv8n7zTcsO/OYdv+Hajp23V26zTepDNvp/WupTpLv8dr7zTc4H27Tkun8SadeTutd3nf3tlpuMH7dp2WTuNNOvN2Wu/yvr2z03CD9+06LZ3Gm3Tm7bTe5X17Z6fhhub37du/+Ryk6dt1vG/XWU+n9S7v2zs7DTc0v2/f/s3nIE3fruN9u856Oq13ed/e2Wm4ofl9+/ZvPgdp+nYd79t11tNpvcv79s5Oww3et+u0dBpv0pm303qX9+2dnYYbvG/Xaek03qQzb6f1Lu/bOzsNN3jfrtPSabxJZ95O613et3d2Gm5Y+n3747xhf5Smb9fxvl1nPZ3Wu7xv7+w03LD0+/bHecP+KE3fruN9u856Oq13Lfm+fdRvAnbs2LFjx85MO6N2H75vf2jUbwJ27NixY8fOTDujdjdG/SZgx44dO3bszLQzandj1H/e7dixY8eOnZl2Ru1ujPrPux07duzYsTPTzqjdjVH/ebdjx44dO3Zm2hm1u7H294V27NixY8fOmt+3b6z9faEdO3bs2LHjffvRf19ox44dO3bseN9+9N8X2rFjx44dOzO8bwcAjrYH3/Hh5cDUAQA=
+  </data>
+ </layer>
+ <layer name="Portal" width="500" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OMQ0AAAgDsB3414yMkdAqaAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcN+0AwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwGsL3oBvhsDUAQA=
+  </data>
+ </layer>
+ <layer name="Collision" width="500" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3dgWnDUBAFQaH+i04FAePkS+zdDLwCjMwtGGPf13XdZmZmlh8A0KXnANCn5wDQp+cA0KfnANCn5wDQp+cA0KfnANCn5wDQp+cA0KfnANCn5wDQp+cA0KfnANCn5wDQp+cA0KfnANCn5wDQp+cA0KfnANCn5wDQp+cA0KfnANCn5wDQp+cA0KfnANCn5wDQp+cA0Hfbyj3t7ddrZmY2cU97+/WamW0ZO7z1vL3PAM5yZ3fRc4CZ3Nld9BxgJnd2Fz0HmMmd3eWp5+17GgDPcmd30XOAmdzZXXzeDjCTO7uLngPM5M7uoucAM7mzu+g5wEzu7C4nnvcn33nzPgM4y53dRc8BZnJnd/F5O8BM7uwueg4wkzu7i54DzOTO7qLnADO5s7t8+7z/+rut3mcAZ7mzu+g5wEzu7C6//U/KUwPgDHcWAPr0HAD69BwA+vQcAPr0HAD69BwA+vQcAPr0HAD69BwA+t7+vTAzMzP7n/0AWr4kBsDUAQA=
+  </data>
+ </layer>
+</map>

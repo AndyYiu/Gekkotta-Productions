@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<!-- basedir -->
+	<basedir path="data/" />
+	<!-- sounds -->
+	
+	<!-- songs -->
+	
+	<!-- images -->
+
+	//Bermagot
+		<image key="bergTurret1" file="MainGame/enemies/Bermagot/attack1_0.png"/>
+		<image key="bergTurret2" file="MainGame/enemies/Bermagot/attack1_1.png"/>
+		<image key="bergTurret3" file="MainGame/enemies/Bermagot/attack1_2.png"/>
+		<image key="bergTurret4" file="MainGame/enemies/Bermagot/attack1_3.png"/>
+		<image key="bergTurret5" file="MainGame/enemies/Bermagot/attack1_4.png"/>
+		<image key="bergTurret6" file="MainGame/enemies/Bermagot/attack1_5.png"/>
+		<image key="bergTurret7" file="MainGame/enemies/Bermagot/attack1_6.png"/>
+		<image key="bergTurret8" file="MainGame/enemies/Bermagot/attack1_7.png"/>
+		<image key="bergTurret9" file="MainGame/enemies/Bermagot/attack1_8.png"/>
+		<image key="bergTurret10" file="MainGame/enemies/Bermagot/attack1_9.png"/>
+		<image key="bergTurret11" file="MainGame/enemies/Bermagot/attack1_10.png"/>
+		<image key="bergTurret12" file="MainGame/enemies/Bermagot/attack1_11.png"/>
+		<image key="bergTurret13" file="MainGame/enemies/Bermagot/attack1_12.png"/>
+		<image key="bergTurret14" file="MainGame/enemies/Bermagot/attack1_13.png"/>
+		<image key="bergTurret15" file="MainGame/enemies/Bermagot/attack1_14.png"/>
+		<image key="bergTurret16" file="MainGame/enemies/Bermagot/attack1_15.png"/>
+		<image key="bergTurret17" file="MainGame/enemies/Bermagot/attack1_16.png"/>
+		<image key="bergTurret18" file="MainGame/enemies/Bermagot/attack1_17.png"/>
+		
+		<image key="bergLaser1" file="MainGame/enemies/Bermagot/attack2_0.png"/>
+		<image key="bergLaser2" file="MainGame/enemies/Bermagot/attack2_1.png"/>
+		<image key="bergLaser3" file="MainGame/enemies/Bermagot/attack2_2.png"/>
+		<image key="bergLaser4" file="MainGame/enemies/Bermagot/attack2_3.png"/>
+		<image key="bergLaser5" file="MainGame/enemies/Bermagot/attack2_4.png"/>
+		<image key="bergLaser6" file="MainGame/enemies/Bermagot/attack2_5.png"/>
+		<image key="bergLaser7" file="MainGame/enemies/Bermagot/attack2_6.png"/>
+		<image key="bergLaser8" file="MainGame/enemies/Bermagot/attack2_7.png"/>
+		<image key="bergLaser9" file="MainGame/enemies/Bermagot/attack2_8.png"/>
+		<image key="bergLaser10" file="MainGame/enemies/Bermagot/attack2_9.png"/>
+		<image key="bergLaser11" file="MainGame/enemies/Bermagot/attack2_10.png"/>
+		<image key="bergLaser12" file="MainGame/enemies/Bermagot/attack2_11.png"/>
+		<image key="bergLaser13" file="MainGame/enemies/Bermagot/attack2_12.png"/>
+		<image key="bergLaser14" file="MainGame/enemies/Bermagot/attack2_13.png"/>
+		<image key="bergLaser15" file="MainGame/enemies/Bermagot/attack2_14.png"/>
+		<image key="bergLaser16" file="MainGame/enemies/Bermagot/attack2_15.png"/>
+		<image key="bergLaser17" file="MainGame/enemies/Bermagot/attack2_16.png"/>
+		<image key="bergLaser18" file="MainGame/enemies/Bermagot/attack2_17.png"/>
+		<image key="bergLaser19" file="MainGame/enemies/Bermagot/attack2_18.png"/>
+		<image key="bergLaser20" file="MainGame/enemies/Bermagot/attack2_19.png"/>
+		<image key="bergLaser21" file="MainGame/enemies/Bermagot/attack2_20.png"/>
+		<image key="bergLaser22" file="MainGame/enemies/Bermagot/attack2_21.png"/>
+		<image key="bergLaser23" file="MainGame/enemies/Bermagot/attack2_22.png"/>
+		<image key="bergLaser24" file="MainGame/enemies/Bermagot/attack2_23.png"/>
+		<image key="bergLaser25" file="MainGame/enemies/Bermagot/attack2_24.png"/>
+		<image key="bergLaser26" file="MainGame/enemies/Bermagot/attack2_25.png"/>
+		<image key="bergLaser27" file="MainGame/enemies/Bermagot/attack2_26.png"/>
+		<image key="bergLaser28" file="MainGame/enemies/Bermagot/attack2_27.png"/>
+		<image key="bergLaser29" file="MainGame/enemies/Bermagot/attack2_28.png"/>
+		<image key="bergLaser30" file="MainGame/enemies/Bermagot/attack2_29.png"/>	
+		<image key="bergLaser31" file="MainGame/enemies/Bermagot/attack2_30.png"/>
+		<image key="bergLaser32" file="MainGame/enemies/Bermagot/attack2_31.png"/>
+		<image key="bergLaser33" file="MainGame/enemies/Bermagot/attack2_32.png"/>
+		<image key="bergLaser34" file="MainGame/enemies/Bermagot/attack2_33.png"/>
+		<image key="bergLaser35" file="MainGame/enemies/Bermagot/attack2_34.png"/>
+		<image key="bergLaser36" file="MainGame/enemies/Bermagot/attack2_35.png"/>
+		<image key="bergLaser37" file="MainGame/enemies/Bermagot/attack2_36.png"/>
+		<image key="bergLaser38" file="MainGame/enemies/Bermagot/attack2_37.png"/>
+		
+		<image key="bergMissile1" file="MainGame/enemies/Bermagot/attack3_0.png"/>
+		<image key="bergMissile2" file="MainGame/enemies/Bermagot/attack3_1.png"/>
+		<image key="bergMissile3" file="MainGame/enemies/Bermagot/attack3_2.png"/>
+		<image key="bergMissile4" file="MainGame/enemies/Bermagot/attack3_3.png"/>
+		<image key="bergMissile5" file="MainGame/enemies/Bermagot/attack3_4.png"/>
+		<image key="bergMissile6" file="MainGame/enemies/Bermagot/attack3_5.png"/>
+		<image key="bergMissile7" file="MainGame/enemies/Bermagot/attack3_6.png"/>
+		<image key="bergMissile8" file="MainGame/enemies/Bermagot/attack3_7.png"/>
+		<image key="bergMissile9" file="MainGame/enemies/Bermagot/attack3_8.png"/>
+		<image key="bergMissile10" file="MainGame/enemies/Bermagot/attack3_9.png"/>
+		<image key="bergMissile11" file="MainGame/enemies/Bermagot/attack3_10.png"/>
+		<image key="bergMissile12" file="MainGame/enemies/Bermagot/attack3_11.png"/>
+		<image key="bergMissile13" file="MainGame/enemies/Bermagot/attack3_12.png"/>
+		<image key="bergMissile14" file="MainGame/enemies/Bermagot/attack3_13.png"/>
+		
+		<image key="bergDie1" file="MainGame/enemies/Bermagot/die1_0.png"/>
+		<image key="bergDie2" file="MainGame/enemies/Bermagot/die1_1.png"/>
+		<image key="bergDie3" file="MainGame/enemies/Bermagot/die1_2.png"/>
+		<image key="bergDie4" file="MainGame/enemies/Bermagot/die1_3.png"/>
+		<image key="bergDie5" file="MainGame/enemies/Bermagot/die1_4.png"/>
+		<image key="bergDie6" file="MainGame/enemies/Bermagot/die1_5.png"/>
+		<image key="bergDie7" file="MainGame/enemies/Bermagot/die1_6.png"/>
+		<image key="bergDie8" file="MainGame/enemies/Bermagot/die1_7.png"/>
+		<image key="bergDie9" file="MainGame/enemies/Bermagot/die1_8.png"/>
+		<image key="bergDie10" file="MainGame/enemies/Bermagot/die1_9.png"/>
+		<image key="bergDie11" file="MainGame/enemies/Bermagot/die1_10.png"/>
+		
+		
+		
+		<image key="bergStand1" file="MainGame/enemies/Bermagot/stand_0.png"/>
+		<image key="bergStand2" file="MainGame/enemies/Bermagot/stand_1.png"/>
+		<image key="bergStand3" file="MainGame/enemies/Bermagot/stand_2.png"/>
+		<image key="bergStand4" file="MainGame/enemies/Bermagot/stand_3.png"/>
+		<image key="bergStand5" file="MainGame/enemies/Bermagot/stand_4.png"/>
+		<image key="bergStand6" file="MainGame/enemies/Bermagot/stand_5.png"/>
+		<image key="bergStand7" file="MainGame/enemies/Bermagot/stand_6.png"/>
+		<image key="bergStand8" file="MainGame/enemies/Bermagot/stand_7.png"/>
+		<image key="bergStand9" file="MainGame/enemies/Bermagot/stand_8.png"/>
+		<image key="bergStand10" file="MainGame/enemies/Bermagot/stand_9.png"/>
+		<image key="bergStand11" file="MainGame/enemies/Bermagot/stand_10.png"/>
+		<image key="bergStand12" file="MainGame/enemies/Bermagot/stand_11.png"/>
+		<image key="bergStand13" file="MainGame/enemies/Bermagot/stand_12.png"/>
+		<image key="bergStand14" file="MainGame/enemies/Bermagot/stand_13.png"/>
+		<image key="bergStand15" file="MainGame/enemies/Bermagot/stand_14.png"/>
+	
+	
+		<image key="bergBullet2" file="MainGame/enemies/Bermagot/bullet2.png"/>
+		<image key="bergBullet3" file="MainGame/enemies/Bermagot/bullet3.png"/>
+		<image key="bergBullet4" file="MainGame/enemies/Bermagot/bullet4.png"/>
+		<image key="bergBullet5" file="MainGame/enemies/Bermagot/bullet5.png"/>
+		<image key="bergBullet6" file="MainGame/enemies/Bermagot/bullet6.png"/>
+		<image key="bergBullet7" file="MainGame/enemies/Bermagot/bullet7.png"/>
+		<image key="bergBullet8" file="MainGame/enemies/Bermagot/bullet8.png"/>
+	
+		
+	<!-- sheets -->
+	<!-- fonts -->
+</resources>

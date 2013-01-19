@@ -1,0 +1,607 @@
+ProjectZomie.java
+
+public class ProjectZombie extends StateBasedGame implements Externalizable
+
+    public static Constants constants = new Constants();
+
+	/*
+	 *pre: 
+	 *post:
+	 */
+    public ProjectZombie(String title)
+
+	//main method
+    public static void main(String[] args) throws SlickException 
+        AppGameContainer app = new AppGameContainer(new ProjectZombie("ProjectZ"));
+    
+	/* initializes states
+	 *pre: game container created
+	 *post:states created
+	 */
+    @Override
+    public void initStatesList(GameContainer gc) throws SlickException
+
+	/*
+	 *pre: 
+	 *post:
+	 */
+    @Override
+    public void writeExternal(ObjectOutput out) throws IOException
+
+	/*
+	 *pre: 
+	 *post:
+	 */
+    @Override
+    public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException
+
+------------------------------------------------------------------------------------------
+OverWorldState.java
+
+public class OverWorldState extends World {
+
+    public OverWorldPlayer player;
+    public Maps map;
+    public boolean drawWorld = false;
+    public String location;
+    public MosaicTransitionIn in;
+    public float s;
+    public MosaicTransitionOut out;
+
+	/*constructor
+	 *pre: needs id and game container
+	 *post:adds mosaic transitions
+	 */
+    public OverWorldState(int id, GameContainer container)
+
+	/*initializes variables
+	 *pre: needs a gamecontainer and statebased game
+	 *post:player and map added in
+	 */
+    @Override
+    public void init(GameContainer container, StateBasedGame game) throws SlickException
+
+	/*updates game interface
+	 *pre: gc, sbg, and fps based on computer
+	 *post:updates the interface based on keyboard input
+	 */
+    @Override
+    public void update(GameContainer container, StateBasedGame sbg, int delta) throws SlickException
+        Input input = container.getInput();
+        int x = (int) player.x, y = (int) player.y;
+
+-------------------------------------------------------------------------------------------
+OverWorldPlayer.java
+
+public class OverWorldPlayer extends Entity {
+
+    public Animation sprite, up, down, left, right;
+
+	/*constructor
+	 *pre: takes in x and y position
+	 *post:initializes animations and pictures
+	 */
+    public OverWorldPlayer(float x, float y)
+        Image[] movementUp = {ResourceManager.getImage("playerOVBack"), ResourceManager.getImage("playerOVBackW1"), ResourceManager.getImage("playerOVBackW2")};
+        Image[] movementDown = {ResourceManager.getImage("playerOVFront"), ResourceManager.getImage("playerOVFrontW1"), ResourceManager.getImage("playerOVFrontW2")};
+        Image[] movementLeft = {ResourceManager.getImage("playerOVLeft"), ResourceManager.getImage("playerOVLeftW1"), ResourceManager.getImage("playerOVLeftW2")};
+        Image[] movementRight = {ResourceManager.getImage("playerOVRight"), ResourceManager.getImage("playerOVRightW1"), ResourceManager.getImage("playerOVRightW2")};
+        int[] duration = {200, 300, 300};
+
+	/*draws images
+	 *pre: gc, graphics
+	 *post:character is drawn
+	 */
+    @Override
+    public void render(GameContainer container, Graphics g) throws SlickException
+
+	/*sets direction
+	 *pre: takes in keyboard input
+	 *post: changes animation
+	 */
+    public void setDirection(int a)
+
+	/*moves the player
+	 *pre: keyboard input
+	 *post: moves person.
+	 */
+    public void move(int a, int delta)
+
+-------------------------------------------------------------------------------------------
+Constants.java
+
+public class Constants
+    public static final int MAINMENUSTATE = 0;
+    public static final int OVERWORLD = 1;
+    public static final int MINIGAMESTATE = 2;
+
+-------------------------------------------------------------------------------------------
+Maps.java
+
+public class Maps extends Entity {
+
+    TiledMap map;
+    public boolean[][] blocked;
+    public boolean[][] interact;
+    public final int TILESIZE = 20;
+    public int mapWidth;
+    public int mapHeight;
+    private int square[] = {1, 1, 15, 1, 15, 15, 1, 15}; //square shaped tile
+    public static ArrayList<Object> entities;
+
+	/*constructor
+	 *pre: x position, y position, and which map
+	 *post:draws in tiled map and does collision and interaction check
+	 */
+    public Maps(float x, float y, int selection) throws SlickException
+
+	/*draws pictures
+	 *pre: gc, graphics
+	 *post:draws the map
+	 */
+    @Override
+    public void render(GameContainer container, Graphics g) throws SlickException
+
+	/*checks if area is blocks
+	 *pre: takes in position
+	 *post:returns true or false depending if area iis blocked
+	 */
+    public boolean isBlocked(float x, float y)
+        int xBlock = (int) x / TILESIZE;
+        int yBlock = (int) y / TILESIZE;
+
+	/*checks if area is interactable
+	 *pre: position
+	 *post: returns true or false depending if area is interactable
+	 */
+    public boolean isInteractable(float x, float y)
+        int xBlock = (int) x / TILESIZE;
+        int yBlock = (int) y / TILESIZE;
+
+	/*sets areas that are interactable
+	 *pre: a tiled map is made
+	 *post:and area that is interactable is now true
+	 */
+    public void interactCheck()
+        int tileID = map.getTileId(xAxis, yAxis, map.getLayerIndex("AccessPoints"));
+        String value = map.getTileProperty(tileID, "interact", "false");
+
+	/*sets areas that are blocked
+	 *pre: a tiled map is made
+	 *post:and area that is blocked is now true
+	 */
+    public void collisionCheck()
+        int tileID = map.getTileId(xAxis, yAxis, map.getLayerIndex("CollideBeds"));
+        String value = map.getTileProperty(tileID, "blocked", "false");
+
+-------------------------------------------------------------------------------------------
+MenuState.java
+
+public class MenuState extends World {
+
+    private Image background = null;
+    private Image startGameOption = null;
+    private Image exitOption = null;
+    private float startGameScale = 1;
+    private float exitScale = 1;
+    private static int menuX = 410;
+    private static int menuY = 360;
+
+	/*constructor
+	 *pre: gc and id
+	 *post:menustate is made
+	 */
+    public MenuState(int id, GameContainer container)
+
+	/*initializes variables
+	 *pre: gc and sbg
+	 *post:background image and options image set
+	 */
+    @Override
+    public void init(GameContainer gc, StateBasedGame sbg) throws SlickException
+
+	/*draws pictures
+	 *pre: gc, sbg and graphics
+	 *post:background and buttons are drawn
+	 */
+    @Override
+    public void render(GameContainer gc, StateBasedGame sbg, Graphics grphcs) throws SlickException
+
+	/*updates every frame
+	 *pre: gc, sbg, and fps
+	 *post:if button is hovered over, makes it pop-up and checks for clicking
+	 */
+    @Override
+    public void update(GameContainer gc, StateBasedGame sb, int delta) throws SlickException
+        Input input = gc.getInput();
+        int mouseX = input.getMouseX();
+        int mouseY = input.getMouseY();
+        boolean insideStartGame = false;
+        boolean insideExit = false;
+        float scaleStep = 0.0001f;
+
+-------------------------------------------------------------------------------------------
+MosaicTransitionOut.java
+
+Developer: David Krutsko  
+
+public class MosaicTransitionOut implements Transition
+
+   private float Speed;      // Speed of the transition
+   private float Multiplier; // Stage of the transition
+   private boolean Complete; // Is transition comlpete
+
+	/*constructor
+	 *pre: 
+	 *post:transition made
+	 */   
+   public MosaicTransitionOut()
+
+	/*constructor
+	 *pre: the lengt of transition
+	 *post: creates transition
+	 */   
+   public MosaicTransitionOut (float Speed)
+
+	/*checks if transition is complete
+	 *pre: 
+	 *post:if transition is done, return true
+	 */   
+   public boolean isComplete()
+
+	/*renders over previous state
+	 *pre: sbg, gc, and graphics
+	 *post:draws transition
+	 */   
+   public void postRender (StateBasedGame game, GameContainer container, Graphics g)
+
+	/*updates frames
+	 *pre: sbg, gc, fps
+	 *post:does the transition
+	 */   
+   public void update (StateBasedGame game, GameContainer container, int delta)
+
+	/*draws part of transition underneath current state
+	 *pre: sbg, gc, fps
+	 *post:empty method as of now
+	 */   
+   public void preRender (StateBasedGame game, GameContainer container, Graphics g)
+
+	/*initializes the transition
+	 *pre: state we're transition out of and state transitioning into
+	 *post: empty method as of now
+	 */   
+   public void init (GameState firstState, GameState secondState)
+
+------------------------------------------------------------------------------------------
+MosaicTransitionIn.java
+
+Developer: David Krutsko
+
+public class MosaicTransitionIn implements Transition
+
+   private float Speed;      // Speed of the transition
+   private float Multiplier; // Stage of the transition
+   private boolean Complete; // Is transition comlpete
+ 
+	/*constructor
+	 *pre: multiplier size
+	 *post:creates transition
+	 */  
+   public MosaicTransitionIn (float Size)
+ 
+	/*constructor
+	 *pre: size and speed
+	 *post:creates transition
+	 */  
+   public MosaicTransitionIn (float Speed, float Size)
+ 
+	/*checks if transition is complete
+	 *pre: 
+	 *post:if transition is done, return true
+	 */   
+   public boolean isComplete()
+
+	/*renders over previous state
+	 *pre: sbg, gc, and graphics
+	 *post:draws transition
+	 */ 
+   public void postRender (StateBasedGame game, GameContainer container, Graphics g)
+ 
+	/*updates frames
+	 *pre: sbg, gc, fps
+	 *post:does the transition
+	 */   
+   public void update (StateBasedGame game, GameContainer container, int delta)
+
+	/*draws part of transition underneath current state
+	 *pre: sbg, gc, fps
+	 *post:empty method as of now
+	 */   
+   public void preRender (StateBasedGame game, GameContainer container, Graphics g)
+
+	/*initializes the transition
+	 *pre: state we're transition out of and state transitioning into
+	 *post: empty method as of now
+	 */   
+   public void init (GameState firstState, GameState secondState)
+
+
+--------------------------------------------------------------------------------------------
+MainGameState.java
+
+public class MainGameState extends World
+
+	/*constructor
+	 *pre: id and gc
+	 *post:makes the state
+	 */
+    public MainGameState(int id, GameContainer container)
+
+--------------------------------------------------------------------------------------------
+MainGamePlayer.java
+
+public class MainGamePlayer extends Entity
+
+	/*constructor
+	 *pre: id and gc
+	 *post:makes the player
+	 */
+    public MainGamePlayer(float x, float y)
+--------------------------------------------------------------------------------------------
+MainGameObject.java
+
+public interface MainGameObject
+
+	/*get's the name of object
+	 *pre: 
+	 *post: returns the name
+	 */
+    public String getName();
+
+	/*sets position
+	 *pre: uses vector position
+	 *post:position of object is set
+	 */
+    public void setPosition(Vector2f position);
+
+	/* gets the position
+	 *pre: 
+	 *post: returns the vector position
+	 */
+    public Vector2f getPosition();
+
+	/*draws pictures
+	 *pre: grpahics
+	 *post: draws the object
+	 */
+    public void render(Graphics graphics);
+
+	/*updates the game
+	 *pre: gc, sbg, and fps
+	 *post: updates every frame
+	 */
+    public void update(GameContainer gc, StateBasedGame sbg, int delta);
+
+-------------------------------------------------------------------------------------------
+MiniGameState.java
+
+public class MiniGameState extends World
+
+    private Image background, cursor;
+    private int choice, score;
+    private MiniGameObject object[];
+    private MiniGameEnemy enemies[];
+    private MiniGamePlayer player;
+    private float enemyX, enemyY;
+    private Random randNum;
+    private float speed, rotation, hip;
+    private int time, timeMax, timeMin, newTime, roll1, roll2, mouseX, mouseY;
+    private boolean hit;
+
+	/*constructor
+	 *pre: ig, gc, and the minigame selection
+	 *post:makes the minigame
+	 */
+    public MiniGameState(int id, GameContainer gc, int selection) throws SlickException
+
+	/*resets all variables
+	 *pre: 
+	 *post: depending on minigame, time, score, and position is reset
+	 */
+    public void resetAll()
+
+	/*initializes variables
+	 *pre: gc, and sbg
+	 *post:time and position of players objects and enemies are set
+	 */
+    @Override
+    public void init(GameContainer container, StateBasedGame game) throws SlickException
+
+	/*draws pictures
+	 *pre: gc, sbg, and graphics
+	 *post:depending on minigame, draws the background, score, and time
+	 */
+    @Override
+    public void render(GameContainer container, StateBasedGame game, Graphics g) throws SlickException
+    
+	/*updates the game
+	 *pre: gc, sbg, and fps
+	 *post: update frame
+	 */
+    @Override
+    public void update(GameContainer gc, StateBasedGame sbg, int delta) throws SlickException
+        Input input = container.getInput();
+
+--------------------------------------------------------------------------------------------
+MiniGameObject.java
+
+public class MiniGameObject extends Entity
+
+    public static String PLAYER = "MINIGAMEOBJECT";
+    public Animation objectAnim;
+    private Image object;
+    private int miniGame, choice2;
+    private float speedChoice, velocX, velocY;
+
+	/*constructor
+	 *pre: the position of object and minigame number
+	 *post: the object is made
+	 */
+    public MiniGameObject(float x, float y, int c)
+            int duration[] = {30, 300, 50};
+            Image[] animations = {ResourceManager.getImage("troncircle1"), ResourceManager.getImage("troncircle2"), ResourceManager.getImage("troncircle1")};
+            
+
+	/*sets the velocity in x direction
+	 *pre: takes speed
+	 *post:updates the velocity
+	 */
+    public void setVelocX(float s)
+
+	/*sets the velocity in y direction
+	 *pre: takes speed
+	 *post:updates the velocity
+	 */
+    public void setVelocY(float s)
+
+	/*gets the speed in x direction
+	 *pre: 
+	 *post:returns speed in x
+	 */
+    public float getVelocX()
+
+	/*gets the speed in y direction
+	 *pre: 
+	 *post:returns speed in y
+	 */
+    public float getVelocY()
+
+	/*makes random speed
+	 *pre: 
+	 *post: a speed is generated
+	 */
+    public void newRandomSpeed()
+
+	/*draws pictures
+	 *pre: gc and graphics
+	 *post: if object is a picture, draw it
+	 */
+    @Override
+    public void render(GameContainer container, Graphics g) throws SlickException
+
+	/*updates the frame
+	 *pre: gc and fps
+	 *post: updated frame
+	 */
+    @Override
+    public void update(GameContainer container, int delta) throws SlickException
+
+	/*resets the position of object
+	 *pre: 
+	 *post:object position is reset
+	 */
+    public void resetPosition()
+
+--------------------------------------------------------------------------------------------
+MiniGamePlayer.java
+
+public class MiniGamePlayer extends Entity
+
+    public static String PLAYER = "MINIGAMEPLAYER";
+    public Image players;
+    private Animation player;
+    private int choice;
+    float scale = 1.0f;
+    private float gunX, gunY;
+    private Circle gun;
+
+	/*constructor
+	 *pre: position and minigame number
+	 *post:makes the player
+	 */
+    public MiniGamePlayer(float x, float y, int choice)
+
+	/*updates the frame
+	 *pre: gc and fps
+	 *post:updated frame
+	 */
+    @Override
+    public void update(GameContainer container, int delta) throws SlickException
+
+	/*makes a bullet
+	 *pre: the rotation of the player
+	 *post:makes a bullet shooting in that direction
+	 */
+    public MiniGameObject generateBullet(float angle)
+
+	/*draws pictures
+	 *pre: gc and graphics
+	 *post:depending on minigame, a picture is drawn
+	 */
+    @Override
+    public void render(GameContainer container, Graphics g) throws SlickException
+
+	/*resets player position 
+	 *pre: 
+	 *post: player is respawned
+	 */
+    public void resetPosition()
+
+	/*gets the distance
+	 *pre: the co-ordinates of starting and end
+	 *post:gives the distance
+	 */
+    public double getDistanceBetween(float startX, float startY, float endX, float endY)
+
+	/*gets the angle
+	 *pre: the co-ordinates of starting and end
+	 *post: gives the angle
+	 */
+    public double getTargetAngle(float startX, float startY, float targetX, float targetY)
+
+	/*gets the angle
+	 *pre: 
+	 *post:returns the players rotation
+	 */
+    public float getRotate()
+
+-------------------------------------------------------------------------------------------
+MiniGameEnemy.java
+
+public class MiniGameEnemy extends Entity {
+
+    private int miniGame;
+    private Image enemy;
+    public Animation object;
+    private static String type = "MINIGAMEENEMY";
+    public boolean right = true, left = false, up, down;
+    private float speedChoice;
+    private Random randNum;
+    private int health;
+
+	/*constructor
+	 *pre: position and minigame number
+	 *post:makes enemy
+	 */
+    public MiniGameEnemy(float x, float y, int c)
+
+	/*gives a speed
+	 *pre: 
+	 *post:random speed is generated
+	 */
+    public void newRandomSpeed()
+
+	/*draws picture
+	 *pre: gc and grahics
+	 *post:picture is drawn
+	 */
+    @Override
+    public void render(GameContainer container, Graphics g) throws SlickException
+
+	/*updates frame
+	 *pre: gc and fps
+	 *post:updated frame
+	 */
+    @Override
+    public void update(GameContainer container, int delta) throws SlickException

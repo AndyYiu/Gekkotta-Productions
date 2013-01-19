@@ -1,0 +1,162 @@
+import java.awt.*;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import java.awt.image.BufferedImage;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class Jump extends JPanel implements KeyListener{
+    private double height=0, speed=4;
+    public static final double gravity = 9.81;
+    private double x=25;
+    private boolean left=false, right=false, up=false;
+    private BufferedImage buf;
+    private JFrame frame;
+
+    public Jump(){
+        super();
+        frame = new JFrame("jump");
+        frame.setSize(600, 600);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.add(this);
+        frame.setVisible(true);
+        frame.addKeyListener(this);
+        buf = new BufferedImage(600,600, BufferedImage.TYPE_INT_RGB);
+        setIgnoreRepaint(true);
+    } 
+
+    @Override
+    public void paint(Graphics g) {
+        
+        
+        Graphics2D gBuf = buf.createGraphics();
+        gBuf.setColor(Color.WHITE);
+        gBuf.fillRect(0, 0, 600, 600);
+        gBuf.setColor(Color.GREEN);
+        gBuf.fillRect(0, 550, 600, 2);
+        gBuf.setColor(Color.BLUE);
+        gBuf.fillOval((int) x, (int) (500-(height*100)), 50, 50);            
+        gBuf.dispose();
+        
+        g.drawImage(buf, 0, 0, this);
+    }   
+
+
+    public void jump(){ 
+        long previous= 0, start=0;
+
+        while(true){
+            start= System.nanoTime();  
+            if(previous != 0 && up){
+                double delta = start-previous;
+
+                height += (delta/1000000000) *speed;        
+                speed -= (delta/1000000000)  * gravity; 
+            }  
+            if(left)
+                x-=3;
+            if(right)
+                x+=3; 
+            
+            try {
+                Thread.sleep(10);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+            if(height < 0){
+                height=0;
+                speed=4; 
+                up=false;
+            }      
+            previous= start;
+            paint(this.getGraphics());
+        }
+
+    }
+    public static void main(String[] args){
+        Jump jump = new Jump();
+        jump.jump();
+    }
+
+    public void keyTyped(KeyEvent e) {    
+    }
+
+    public void keyPressed(KeyEvent e) {    
+        if(e.getKeyCode() == KeyEvent.VK_UP)
+            up=true;
+        if(e.getKeyCode() == KeyEvent.VK_LEFT)
+            left=true;
+        if(e.getKeyCode() == KeyEvent.VK_RIGHT)
+            right=true;      
+    }
+
+    public void keyReleased(KeyEvent e) {    
+        if(e.getKeyCode() == KeyEvent.VK_LEFT)
+            left=false;
+        if(e.getKeyCode() == KeyEvent.VK_RIGHT)
+            right=false;    
+    }
+
+}
+------------------------------------------------------------------------------------------
+Since the gravity reduces vertical acceleration by 9.81m/s². you can keep the time of the start of your jump. And then every repaint( ) or every update( ) you have to check the time, calculate delta, and use that time to change the speed, set the newly measured time as the old and repeat.
+
+You just have to figure out a normal starting speed of the jump..
+So imagine if you start with a speed of 9.81m/s (how convenient). And you computer is suuuuppper slow and loops every 0.25sec (how convenient again). Result:
+Code:
+
+       time   height   speed
+       0      0        9.81
+       0.25   2.4525   7.3575
+       0.5    4.291875 4.905
+       0.75   5.518125 2.4525
+       1      6.13125   0
+       1.25   6.13125   -2.4525 
+       1.5    5.518125  -4.905
+       1.75   4.291875  -7.3575
+       2      2.4525   -9.81
+       2.25   0        -12.2625
+
+The delta here was 0.25 with you the delta will be timeNow - timePreviousLoop. Which will be much more accurate as i reach a height of 6.13m here, while it will actually reaches 5m only (as you see in the attachment). 9.81m/s as start speed is a bit fast too
+Or am i totally going in the wrong direction here? 
+------------------------------------------------------------------------------------------
+Delta contains a value measured in nanoseconds. (1s = 10^9nanoseconds).
+The speed and gravity's measurement are in m/second and m/second².
+Imagine if delta was 10 milliseconds (0.01s) and the target had a speed of 10m/s.
+In those 10 milliseconds it would've moved 10m/s * (10ms / 1000) = 0.1m. And for nanoseconds it's just a few extra zeros.
+
+In the method i do thread.sleep(10) so it loops every 10ms. Unfortunately that's not 100% correct.
+Not only does eclipse tell me this:
+The precision is not guaranteed - the Thread may sleep more or less than requested.
+But even if it is exactly 10ms. It's still up to the software that controls the processor (OS i think?) That decides if this thread may run now or not. Processors may look like they are running multiple threads at the same time. But in fact they choose 1 thread. Run it a very short time, run the next a short time, run the ne.....
+So if the software decides our thread isn't so very important the loop won't loop exactly every 10ms.
+
+Because of this, i can't hardcode
+height += 0.01 * speed;
+Instead i manually calculate how much time there has been since the previous loop. This is where start and previous comes in. And delta(being start-previous) just resembles the 10ms from the previous example.
+
+Remember, because the times are measured in nanoseconds I have to do /1000000000 Or *10E-9 if you like.
+
+If you print out delta you'll see that 1 loop repeats itself roughly every 15ms. ~10ms from the sleep. Probably 5ms for the calculations. And then the variable part decided by the processor.
+Note that System.out.println(..) may have a bigger impact than you think. Don't every leave them in there for the final result.
+Code:
+
+1.5640903E7
+1.5543059E7
+3.1123445E7
+1.6647953E7
+1.4716222E7
+1.5600562E7
+1.5963846E7
+
+I even get 31ms once.. for some weird reason. Even weirder it gets because it's always in the 3th loop with me.. ALWAYS
+
+And if I wanted the thread to sleep for 100 milliseconds instead of 10 milliseconds how could I change the code so the ball moves faster?
+First of all 100ms sleep becomes noticeable by the human eye. So the object is going to stutter.
+Pretty normal as the 100ms would mean 10fps in my program.
+
+Because i use the start and previous. The amount of sleep doesn't have an impact on the time the ball goes into the air. If the jump takes 2.18 seconds with a sleep of 10. The jump will take 2.18 seconds with a sleep of 100. If you want the jump to look slower or faster you can change the gravity, and then adjust the speed so the jump gets the correct height again.
+
+Speed 3.5 and gravity 2 will get you about the same height / jump as speed 8 and gravity 9.81. But the jump will be much slower.

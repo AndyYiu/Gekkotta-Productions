@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="orthogonal" width="200" height="63" tilewidth="10" tileheight="10">
+ <tileset firstgid="1" name="camera" tilewidth="800" tileheight="600">
+  <image source="camera.png" width="800" height="600"/>
+  <tile id="0">
+   <properties>
+    <property name="camera" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="2" name="Collision" tilewidth="10" tileheight="10">
+  <image source="CollisionTransparent.png" width="10" height="10"/>
+  <tile id="0">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="3" source="deathCollision.tsx"/>
+ <tileset firstgid="4" name="Portal" tilewidth="10" tileheight="10">
+  <image source="Portal.png" width="10" height="10"/>
+  <tile id="0">
+   <properties>
+    <property name="portal" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="5" name="SpawnPlayer" tilewidth="10" tileheight="10">
+  <image source="SpawnPlayer.png" width="10" height="10"/>
+  <tile id="0">
+   <properties>
+    <property name="spawn" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="6" name="bergRef" tilewidth="452" tileheight="518">
+  <properties>
+   <property name="spawn" value="true"/>
+  </properties>
+  <image source="bergRef.png" width="452" height="518"/>
+  <tile id="0">
+   <properties>
+    <property name="spawn" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="7" name="enH0_0" tilewidth="10" tileheight="10">
+  <image source="rock/rock/enH0_0.png" width="90" height="47"/>
+ </tileset>
+ <tileset firstgid="43" name="enV0_0" tilewidth="10" tileheight="10">
+  <image source="rock/rock/enV0_0.png" width="38" height="60"/>
+ </tileset>
+ <tileset firstgid="61" name="edU_0" tilewidth="10" tileheight="10">
+  <image source="rock/rock/edU_0.png" width="66" height="46"/>
+ </tileset>
+ <tileset firstgid="85" name="enH1_4" tilewidth="10" tileheight="10">
+  <image source="rock/rock/enH1_4.png" width="90" height="66"/>
+ </tileset>
+ <tileset firstgid="139" name="enV1_0" tilewidth="10" tileheight="10">
+  <image source="rock/rock/enV1_0.png" width="34" height="60"/>
+ </tileset>
+ <layer name="Boss" width="200" height="63">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICXAVfigWHgxAAA
+  </data>
+ </layer>
+ <layer name="Collision" width="200" height="63">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICXAVfigWHgxAAA
+  </data>
+ </layer>
+ <layer name="Portal" width="200" height="63">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICXAVfigWHgxAAA
+  </data>
+ </layer>
+ <layer name="Camera" width="200" height="63">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICXAVfigWHgxAAA
+  </data>
+ </layer>
+ <layer name="SpawnPlayer" width="200" height="63">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICXAVfigWHgxAAA
+  </data>
+ </layer>
+ <layer name="Death" width="200" height="63">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICXAVfigWHgxAAA
+  </data>
+ </layer>
+ <layer name="Platform" width="200" height="63">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICXAVfigWHgxAAA
+  </data>
+ </layer>
+</map>
